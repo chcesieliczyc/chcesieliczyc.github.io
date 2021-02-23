@@ -5,6 +5,27 @@
     }
 }
 
+details summary { list-style-type: none; } /* Firefox */
+details summary::-webkit-details-marker { display: none; } /* Chrome */
+details summary::marker { display: none; }
+details summary { outline: none; }
+details summary {
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+}
+details summary:before {
+    top: 5px;
+    position: absolute;
+    left: -23px;
+}
+details:not([open]) summary:before {
+    content: '\25BC';
+}
+details[open] summary:before {
+    content: '\25B2';
+}
+
 #navbar-full .navbar{
     border-radius: 0 !important;
     margin-bottom: 0;
@@ -292,6 +313,9 @@
 /*    padding-bottom: 5px;*/
 /*}*/
 
+.info-boxes {
+    display: flex; flex-wrap: wrap
+}
 
 
 .info-box {
@@ -362,16 +386,11 @@
 }
 
 .section {
-    margin-top: 50px;
-    margin-bottom: 20px;
+    padding: 40px 0;
 }
 
 .section--emphasised {
     background-color: var(--base-lighter-transparent-bg);
-    margin-left: -80px;
-    margin-right: -80px;
-    margin-bottom: 0;
-    padding:  20px 80px 50px;
 }
 
 .census-hints {

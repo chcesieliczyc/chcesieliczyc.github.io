@@ -13,7 +13,7 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="assets/css/gsdk.css" rel="stylesheet" />
-    <link href="assets/css/demo-001.css" rel="stylesheet" />
+    <link href="assets/css/styles-001.css" rel="stylesheet" />
 
     <!--     Font Awesome     -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet">
@@ -61,8 +61,10 @@
 
 
 
-<main class="main container">
-        <section class="row section">
+<main class="main">
+    <section class="section">
+        <div class="container">
+        <div class="row">
             <header class="col-md-5">
                 <div class="main-title">
                     <h1><strong>1/04 - 20/06</strong></h1>
@@ -85,9 +87,13 @@
                     <button class="btn btn-lg btn--base main-cta">Liczę się</button>
                 </footer>
             </div>
-        </section>
+        </div>
+        </div>
+    </section>
 
-        <section class="row section" style="display: flex; flex-wrap: wrap">
+    <section class="section">
+        <div class="container">
+        <div class="row info-boxes">
             <div class="col-lg-3 col-md-6 col-xs-12 info-box">
                 <article class="info-box__container">
                     <i class="fas fa-hand-point-right info-box__icon"></i>
@@ -122,9 +128,13 @@
                     <p>Następnym razem spytają Cię o zdanie za 10 lat!</p>
                 </article>
             </div>
-        </section>
+        </div>
+        </div>
+    </section>
+
     <section class="section section--emphasised how-to-count">
-        <div class="row">
+        <div class="container">
+            <div class="row">
             <header class="col-md-6">
                 <h1>Jak Się Spisać?</h1>
                 <h3>Krok po kroku</h3>
@@ -150,7 +160,7 @@
                 </p>
             </article>
         </div>
-        <div class="row">
+            <div class="row">
             <article class="col-md-6">
                 <h2>Logowanie</h2>
                 <p>
@@ -176,7 +186,7 @@
                 <pre>INFORMACJE W TEJ CZĘŚCI BĘDĄ POPRAWIANE NA BIEŻĄCO</pre>
             </article>
         </div>
-        <div class="row">
+            <div class="row">
             <article class="col-md-6 col-md-offset-6">
                 <h2>Pytanie o wyznanie</h2>
                 <p>
@@ -204,7 +214,7 @@
                 <p>Dobrze się zastanów, jakiej odpowiedzi chcesz udzielić.</p>
             </article>
         </div>
-        <div class="row">
+            <div class="row">
             <article class="col-md-12 census-hints">
                 <h2>Garść podpowiedzi</h2>
                 <ul class="census-hints__list">
@@ -235,18 +245,22 @@
                 </ul>
             </article>
         </div>
+        </div>
     </section>
 
 
-    <section class="section">
+    <section class="section ">
+        <div class="container">
         <div class="row">
             <header class="col-md-6">
                 <h1>A co wpisać, jeśli…?</h1>
                 <h3>I inne pytania</h3>
             </header>
             <div class="col-md-6">
-            <article>
-                <h4>Jestem ochrzczona, ale od lat nie chodzę do kościoła, czy muszę zaznaczać kościół rzymskokatolicki?</h4>
+                <details>
+                    <summary>
+                        <h4>Jestem ochrzczona, ale od lat nie chodzę do kościoła, czy muszę zaznaczać kościół rzymskokatolicki?</h4>
+                    </summary>
                 <ul>
                     <li>chrześcijaństwo - jeśli wierzysz w Jezusa Chrystusa, ale nie chcesz być liczony/a jako katolik/ katoliczka</li>
                     <li>teizm - jeśli wierzysz w osobowego Boga, który ma wpływ na Twoje życie</li>
@@ -254,14 +268,65 @@
                     <li>agnostycyzm - jeśli nie rozstrzygasz kwestii istnienia boga/ bogów lub nie umiesz odpowiedzieć na pytanie, czy istnieją</li>
                     <li>ateizm - jeśli jesteś przekonany/a, że bogowie nie istnieją.</li>
                 </ul>
-            </article>
+            </details>
+                <details>
+                    <summary>
+                        <h4>Wierzę w Boga, ale coraz dalej mi do kościoła katolickiego i nie popieram jego polityki. Jak to wyrazić?</h4>
+                    </summary>
+                    <p>
+                        Możesz wpisać “<em>chrześcijaństwo</em>”. Deklarujesz wtedy wiarę w Boga i Jezusa Chrystusa, ale nie
+                        jesteś liczony/a jako członek/ członkini kościoła katolickiego.
+                    </p>
+                </details>
+                <details>
+                    <summary>
+                        <h4>Czy w spisie jest pole dla ateistów/ agnostyków?</h4>
+                    </summary>
+                    <p>
+                        Na liście odpowiedzi nie ma ateizmu i agnostycyzmu. Możesz zaznaczyć “<em>nie należę do żadnego
+                        wyznania</em>” lub po wybraniu odpowiedzi “<em>należę do wyznania</em>” wpisać
+                        “<em>ateizm</em>” / “<em>agnostycyzm</em>”.
+                    </p>
+                </details>
+                <details>
+                    <summary>
+                        <h4>Dlaczego nie mogę zaznaczyć po prostu inne?</h4>
+                    </summary>
+                    <p>
+                        Formularz spisowy zakłada, że po wybraniu odpowiedzi “<em>inny (podać jaki)</em>”
+                        wpisujesz odpowiedź własnymi słowami. Jeśli nie chcesz się określać, możesz w to
+                        pole wpisać po prostu “<em>inne</em>” / “<em>inny</em>”.
+                    </p>
+                </details>
+                <details>
+                    <summary>
+                        <h4>Czy to prawda, że religia rodziców jest automatycznie przepisywana na dzieci?</h4>
+                    </summary>
+                    <p>
+                        Istnieje taka możliwość, jeśli mieszkacie razem i Twoje wyznanie pozostanie niewypełnione.
+                        W 2011 roku braki danych w tym pytaniu uzupełniano na podstawie odpowiedzi pozostałych
+                        domowników. Dlatego najlepiej osobiście to sprawdzić i wpisać odpowiedź zgodną z poglądami.
+                    </p>
+                </details>
+                <details>
+                    <summary>
+                        <h4>Czy moje wyznanie będzie przypisane do mojego numeru PESEL? Kto ma dostęp do moich danych?</h4>
+                    </summary>
+                    <p>
+                        Spis jest anonimowy. Dane uczestników zostają w GUSie, który publikuje tylko statystyki
+                        odpowiedzi. Na przykład - procenty poszczególnych wyznań w całym kraju / województwie.
+                        Więcej o anonimowości spisu poczytaj na jest stronie <code>[link]</code>.
+                    </p>
+                </details>
             </div>
+        </div>
         </div>
     </section>
 
-    <section class="section section--emphasised">
-        <div class="row">
-        <div class="col-md-6">
+    <section class="section section--emphasised ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
             <h1>Po co w ogóle brać udział?</h1>
             <p>
                 Chcesz się liczyć? Policz się sam! Rezygnując z udziału w spisie, znikasz, tracisz głos. Podobnie jak w przypadku, kiedy nie idziesz głosować. Odrzucasz możliwość odpowiadania zgodnie z prawdą i własnym sumieniem.
@@ -274,15 +339,16 @@
                 Tylko osobisty udział w spisie zapewnia, że udzielisz takiej odpowiedzi, jakiej zechcesz.
             </p>
         </div>
+            </div>
         </div>
     </section>
 
 
 </main>
 <footer class="footer">
-            <p class="footer__credits">
-                &copy; 2021 Liczę Się - zrobione z <i class="fa fa-heart heart" alt="miłością"></i> dla lepszej przyszłości.
-            </p>
+    <p class="footer__credits">
+        &copy; 2021 Liczę Się - zrobione z <i class="fa fa-heart heart" alt="miłością"></i> dla lepszej przyszłości.
+    </p>
 </footer>
 
 </body>
