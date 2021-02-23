@@ -1,4 +1,9 @@
 
+@media (min-width: 1440px) {
+    .container {
+        width: 1370px;
+    }
+}
 
 .tim-typo{
     padding-left: 25%;
