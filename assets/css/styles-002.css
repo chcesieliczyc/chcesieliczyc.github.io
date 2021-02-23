@@ -5,6 +5,12 @@
     }
 }
 
+@media (max-width: 767px) {
+    .navbar-collapse {
+        background-color: var(--base-light);
+    }
+}
+
 details { padding-left: 20px; }
 details summary { list-style-type: none; } /* Firefox */
 details summary::-webkit-details-marker { display: none; } /* Chrome */
@@ -205,4 +211,8 @@ a[id]:not([href]):target + section .target-indicator {
     color: #fff;
     margin: 5px 0;
     text-align: center;
+}
+
+.navbar .navbar-collapse.collapse:target {
+    display: block !important;
 }
