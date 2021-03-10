@@ -207,10 +207,31 @@ a[id]:not([href]):target + section .target-indicator {
     padding: 20px;
 }
 
-.footer__credits {
+.footer__content {
+    display: flex;
+    justify-content: stretch;
+}
+
+.footer__contact,
+.footer__copyrights {
     color: #fff;
-    margin: 5px 0;
-    text-align: center;
+    flex: 1;
+}
+
+.footer__copyrights {
+    text-align: left;
+}
+
+.footer__contact {
+    text-align: right;
+}
+
+.footer__contact a,
+.footer__contact a:hover,
+.footer__contact a:visited,
+.footer__contact a:active,
+.footer__contact a:focus {
+    color: #fff;
 }
 
 .navbar .navbar-collapse.collapse:target {
