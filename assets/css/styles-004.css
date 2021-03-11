@@ -234,11 +234,6 @@ a[id]:not([href]):target + section .target-indicator {
     border-top-color: var(--base-light); }
 
 
-.main-title {
-    margin-top: 30px;
-    margin-bottom: 15px;
-}
-
 .main-cta {
     padding-left: 50px;
     padding-right: 50px;
@@ -285,9 +280,34 @@ a[id]:not([href]):target + section .target-indicator {
     margin-right: 17px;
 }
 
+/* ------------ intro ------------------ */
 
 .intro {}
 
+.main-header {
+    background: url(../img/poland.svg) center -5px no-repeat;
+    min-height: 300px;
+    margin-left: 20px;
+    padding: 20px 0;
+}
+.main-header__heading {
+    font-size: 44px;
+    line-height: 64px;
+    margin: 30px auto 0;
+    width: 410px;
+    padding-left: 4px;
+    text-align: center;
+}
+.main-header__dates {
+    font-size: 64px;
+    line-height: 64px;
+    margin: 17px auto 33px;
+    width: 410px;
+    text-align: center;
+    padding-left: 4px;
+}
+
+/* ------------ hints ------------------ */
 
 .census-hints {
     background-color: var(--base-bg-em);
