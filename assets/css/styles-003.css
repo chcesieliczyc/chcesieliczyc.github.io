@@ -4,6 +4,7 @@ html {
     --base-bg: #24296B;
     --base-bg-em: #00428F;
     --base-contrast: #fff;
+    --social: #2596FF;
 
     --base-light: #8f97ff;
     --base-lighter: #c2c6ff;
@@ -14,6 +15,14 @@ html {
 body {
     font-family: 'Montserrat', sans-serif;
     color: var(--base);
+}
+
+html.debug {
+    background: url("../tmp/1920px.png") top center;
+}
+
+.debug body {
+    background-color: rgba(255,255,255,0.8);
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, .btn, .btn-simple, a, .td-name, td {
@@ -39,10 +48,14 @@ a:focus {
     }
 }
 
+.navbar-collapse .nav li {
+    padding: 0 13px;
+}
+
 .navbar-collapse .nav li > a {
-    border-bottom: 4px solid var(--base-contrast);
+    border-bottom: 4px solid transparent;
     margin: 0;
-    padding: 38px 18px 34px;
+    padding: 40px 3px 31px;
 }
 
 .navbar-collapse .nav li > a:hover,
@@ -124,10 +137,16 @@ a[id]:not([href]):target + section .target-indicator {
     }
 }
 
+@media (min-width: 768px) {
+    .navbar-right {
+        margin-right: 0;
+        padding-right: 10px;
+    }
+}
 
 .navbar .navbar-nav > li > a {
     text-decoration: none;
-    transition: opacity .3s ease;
+    transition: border-color .3s ease;
 }
 
 .navbar-white {
@@ -135,15 +154,25 @@ a[id]:not([href]):target + section .target-indicator {
     border-bottom-color: var(--base);
 }
 
+.debug .navbar-white {
+    background-color: rgba(255,255,255,0.1);
+}
+
 .navbar.navbar-white .navbar-toggle .icon-bar {
     background-color: var(--base);
+}
+
+.logo-container {
+    display: flex;
+    padding-top: 10px;
+    padding-left: 24px;
 }
 
 .logo-container .brand {
     font-size: 32px;
     float: left;
-    line-height: 96px;
-    margin: 0;
+    line-height: 80px;
+    margin: 0 0 0 25px;
 }
 
 
@@ -217,16 +246,48 @@ a[id]:not([href]):target + section .target-indicator {
 }
 
 .main {
-    padding-top: 70px;
+    padding-top: 96px;
 }
 
 .section {
-    padding: 40px 0;
+    padding: 20px 0;
 }
 
 .section--emphasised {
     background-color: var(--base-lighter-transparent-bg);
 }
+
+.social {}
+.social__container {
+    text-align: right;
+    line-height: 38px;
+}
+.social__callout {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--social);
+    margin-right: 10px;
+}
+.social__button {
+    background-color: transparent;
+    border: 0;
+    display: inline-block;
+    margin: 0 2px;
+    padding: 5px 8px;
+    position: relative;
+    top: -4px;
+    transition: opacity .3s ease;
+}
+.social__button:hover {
+    opacity: .7;
+}
+.social__button--twitter {
+    margin-right: 17px;
+}
+
+
+.intro {}
+
 
 .census-hints {
     background-color: var(--base-bg-em);
