@@ -76,6 +76,28 @@ a:focus {
     }
 }
 
+.cookies-and-privacy {
+    position: fixed;
+    background-color: var(--base-bg);
+    bottom: 0;
+    z-index: 666;
+    left: 0;
+    right: 0;
+    padding: 20px 0;
+    text-align: center;
+}
+.cookies-and-privacy__hide {
+    background-color: var(--base-bg-light);
+}
+.cookies-and-privacy p,
+.cookies-and-privacy a,
+.cookies-and-privacy a:hover,
+.cookies-and-privacy a:visited,
+.cookies-and-privacy a:active,
+.cookies-and-privacy a:focus {
+    color: #fff;
+}
+
 details { padding-left: 20px; }
 details summary { list-style-type: none; } /* Firefox */
 details summary::-webkit-details-marker { display: none; } /* Chrome */

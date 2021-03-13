@@ -23,6 +23,8 @@
     <style>
         html {
             --base: #000A8F; /* rgb(0,10,143) */
+            --base-bg: #24296B;
+            --base-bg-light: #EDF4FF;
         }
         body {
             font-family: 'Montserrat', sans-serif;
@@ -46,9 +48,44 @@
         a {
             display: inline-block;
         }
+        button {
+            margin: 0;
+            border: 0;
+            border-radius: 3px;
+            padding: 5px 10px;
+        }
+
+        .cookies-and-privacy {
+            position: fixed;
+            background-color: var(--base-bg);
+            bottom: 0;
+            z-index: 666;
+            left: 0;
+            right: 0;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .cookies-and-privacy__hide {
+            background-color: var(--base-bg-light);
+        }
+        .cookies-and-privacy p,
+        .cookies-and-privacy a,
+        .cookies-and-privacy a:hover,
+        .cookies-and-privacy a:visited,
+        .cookies-and-privacy a:active,
+        .cookies-and-privacy a:focus {
+            color: #fff;
+        }
     </style>
 </head>
 <body>
+<aside class="cookies-and-privacy" style="display: none">
+    <p class="container">
+        Serwis wykorzystuje pliki cookies. Korzystając z naszej strony wyrażasz zgodę na ich wykorzystywanie. <br />
+        Dowiedz się więcej <a href="/polityka-prywatnosci" target="_blank">o polityce cookies i prywatności</a>
+    </p>
+    <button class="btn cookies-and-privacy__hide">OK, Rozumiem</button>
+</aside>
 <h1>Chcę się liczyć</h1>
 <br />
 <h3>Jakie wyznanie podasz w Spisie Powszechnym?</h3>
@@ -64,6 +101,15 @@
 </a>
 </p>
 <p>email: <a href="mailto:kontaktchsl@protonmail.com">kontaktchsl@protonmail.com</a></p>
+
+<script>
+    const doc = document;
+    ((k,s,d,e,b,v = s.getItem(k)) => {
+        v || (e.style.display = 'block');
+        v || b.addEventListener('click', () => { e && d.body.removeChild(e); s.setItem(k, '1') });
+        v && d.body.removeChild(e);
+    })('ciasteczka', localStorage, doc, doc.querySelector('.cookies-and-privacy'), doc.querySelector('.cookies-and-privacy__hide'));
+</script>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MR72C3N"
                   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
