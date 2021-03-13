@@ -20,7 +20,7 @@ html.debug {
 }
 
 .debug body {
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(255,255,255,0.4);
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, .btn, .btn-simple, a, .td-name, td {
@@ -224,6 +224,7 @@ a[id]:not([href]):target + section .target-indicator {
 /* ------------ base ------------------- */
 .base-info {
     background: linear-gradient(180deg, #fff 0%, var(--base-bg-light) 100%), #fff;
+    padding-bottom: 57px;
 }
 .debug .base-info {
     background: transparent;
@@ -272,6 +273,10 @@ a[id]:not([href]):target + section .target-indicator {
     font-size: 16px;
     line-height: 49px;
 }
+.intro-text--last-census,
+.intro-text--religion {
+    color: #000;
+}
 .intro-text--last-census {
    margin-bottom: 20px;
 }
@@ -303,10 +308,13 @@ a[id]:not([href]):target + section .target-indicator {
     outline: none;
 }
 /* ------------ summary ---------------- */
-.summary {}
+.summary {
+    padding: 34px 38px
+}
 
 .info-boxes {
-    display: flex; flex-wrap: wrap
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .info-box {
@@ -315,25 +323,62 @@ a[id]:not([href]):target + section .target-indicator {
 }
 
 .info-box__container {
-    border: 1px solid var(--base-border-light);
-    border-radius: 5px;
-    padding: 120px 20px 20px;
+    background: var(--base-contrast);
+    box-shadow: 0 4px 4px rgba(37, 150, 255, 0.05), 0 4px 16px rgba(37, 150, 255, 0.15);
+    border-radius: 8px;
+    padding: 140px 23px 27px;
     width: 100%;
     position: relative;
 }
 
 .info-box__title {
-    min-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    min-height: 48px;
+    margin: 7px 0 21px;
+    line-height: 24px;
 }
-
+.info-box__container > p {
+    font-weight: 500;
+}
+.info-box__container > p:not(:last-child) {
+    margin-bottom: 20px;
+}
+.info-box__container > p:last-child {
+    margin-bottom: 0;
+}
 .info-box__icon {
     color: var(--base-border-light);
     position: absolute;
-    top: 35px;
-    left: 0;
-    right: 0;
+    top: 47px;
+    left: calc(50% - 32px);
     text-align: center;
     font-size: 70px;
+}
+
+/* ----------- say what? --------------- */
+.say-what {
+    margin: 32px 0 0;
+}
+.say-what__container {
+    background: url("../img/person.png") calc(100% - 25px) bottom no-repeat;
+    padding-bottom: 90px;
+}
+.say-what__title {
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 46px;
+    padding-left: 26px;
+}
+.say-what__text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 23px;
+    padding-left: 26px;
+}
+.say-what__text strong {
+    font-size: 18px;
 }
 
 /* ------------ hints ------------------ */

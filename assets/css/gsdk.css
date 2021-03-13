@@ -1206,23 +1206,23 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
     margin: 5px 0px;
     padding: 20px 15px;
     font-size: 20px; }
-  .navbar .navbar-nav > li > a {
-    padding: 10px 15px;
-    margin: 15px 3px; }
-  .navbar .navbar-nav > li > a.btn {
-    margin: 15px 3px;
-    padding: 8px 16px; }
-  .navbar .navbar-nav > li > a.btn-round {
-    margin: 16px 3px; }
-  .navbar .navbar-nav > li > a [class^="fa"] {
-    font-size: 19px;
-    position: relative;
-    top: 1px; }
-  .navbar .btn {
-    margin: 15px 3px;
-    font-size: 14px; }
-  .navbar .btn-simple {
-    font-size: 16px; }
+  /*.navbar .navbar-nav > li > a {*/
+  /*  padding: 10px 15px;*/
+  /*  margin: 15px 3px; }*/
+  /*.navbar .navbar-nav > li > a.btn {*/
+  /*  margin: 15px 3px;*/
+  /*  padding: 8px 16px; }*/
+  /*.navbar .navbar-nav > li > a.btn-round {*/
+  /*  margin: 16px 3px; }*/
+  /*.navbar .navbar-nav > li > a [class^="fa"] {*/
+  /*  font-size: 19px;*/
+  /*  position: relative;*/
+  /*  top: 1px; }*/
+  /*.navbar .btn {*/
+  /*  margin: 15px 3px;*/
+  /*  font-size: 14px; }*/
+  /*.navbar .btn-simple {*/
+  /*  font-size: 16px; }*/
 
 /*.navbar-nav > li > .dropdown-menu {*/
 /*  border-radius: 10px;*/
@@ -1762,9 +1762,9 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
     /*background-color: rgba(0, 0, 0, 0.45);*/
   }
 
-  .body-click {
-    right: 230px;
-  }
+  /*.body-click {*/
+  /*  right: 230px;*/
+  /*}*/
 
   body {
     position: relative;
