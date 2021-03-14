@@ -497,7 +497,8 @@ a[id]:not([href]):target + section .target-indicator {
     margin: 0 23px 20px;
 }
 .how-to-religion__wrapper {
-    padding: 8px 34px;
+    margin-bottom: 26px;
+    padding: 8px 34px 1px;
     position: relative;
 }
 
@@ -511,7 +512,6 @@ a[id]:not([href]):target + section .target-indicator {
     position: absolute;
     top: 21px;
 }
-
 .how-to-religion__title {
     font-size: 32px;
     margin-bottom: 32px;
@@ -530,6 +530,9 @@ a[id]:not([href]):target + section .target-indicator {
     font-size: 24px;
     font-weight: 600;
 }
+.debug .how-to-religion__text:last-child {
+    margin-top: 64px;
+}
 .how-to-religion__options {
     margin-top: -8px;
     margin-bottom: 32px;
@@ -543,29 +546,55 @@ a[id]:not([href]):target + section .target-indicator {
     position: relative;
 }
 .how-to-religion__option:before {
-    content: counter(list) "  )";
+    content: counter(list) " )";
     counter-increment: list;
+    left: -28px;
     position: absolute;
-    left: -14px;
+    text-align: right;
     top: 0;
+    width: 30px;
 }
 /* ------------ hints ------------------ */
 
+.census-hints-container {
+    margin: 0 18px;
+}
+.debug .census-hints-container {
+    margin: 0 25px;
+}
 .census-hints {
     background-color: var(--base-bg-em);
-    border-radius: 5px;
+    border-radius: var(--info-box-radius);
     color: var(--base-contrast);
-    margin-top: 30px;
-    padding: 0 30px 20px ;
+    padding: 48px 80px;
 }
-
+.debug .census-hints {
+    background-color: transparent;
+    padding-bottom: 97px;
+}
+.census-hints__title {
+    font-size: 32px;
+    line-height: 34px;
+    margin-bottom: 33px;
+}
 .census-hints__list {
-    list-style-type: none;
-    padding: 0;
+    padding-left: 17px;
 }
-
+.non-believers-hint,
 .census-hints__item {
-    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 24px;
+}
+.census-hints__item {
+    margin-bottom: 24px;
+}
+.non-believers-hints {
+    list-style-type: lower-alpha;
+    padding-top: 24px;
+    padding-left: 10px;
+}
+.non-believers-hint {
+    margin-bottom: 16px;
 }
 
 /* ----------- footer ---------------- */
