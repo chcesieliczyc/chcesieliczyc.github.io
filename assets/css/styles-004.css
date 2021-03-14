@@ -507,11 +507,48 @@ a[id]:not([href]):target + section .target-indicator {
 }
 .how-to-religion__wrapper:before {
     content: url("../img/arrow.svg");
-    left: -112px;
+    left: -119px;
     position: absolute;
     top: 21px;
 }
 
+.how-to-religion__title {
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+.how-to-religion__option,
+.how-to-religion__text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+.how-to-religion__text {
+    margin-bottom: 24px;
+}
+.how-to-religion__text:last-child {
+    line-height: 50px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.how-to-religion__options {
+    margin-top: -8px;
+    margin-bottom: 32px;
+    padding-left: 46px;
+    counter-reset: list;
+    list-style-type: none;
+}
+.how-to-religion__option {
+    padding-left: 31px;
+    margin-bottom: 8px;
+    position: relative;
+}
+.how-to-religion__option:before {
+    content: counter(list) "  )";
+    counter-increment: list;
+    position: absolute;
+    left: -14px;
+    top: 0;
+}
 /* ------------ hints ------------------ */
 
 .census-hints {
