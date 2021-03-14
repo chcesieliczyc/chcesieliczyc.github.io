@@ -649,6 +649,51 @@ a[id]:not([href]):target + section .target-indicator {
     line-height: 24px;
     margin-bottom: 24px;
 }
+/* --------- soc bottom -------------- */
+.social-bottom {
+    margin-bottom: 50px;
+    padding: 0;
+}
+.social-bottom__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.social-bottom__title {
+    color: var(--social);
+    font-size: 40px;
+    margin: 0;
+    line-height: 64px;
+}
+.social-bottom__button {
+    font-size: 20px;
+    background-color: var(--social);
+    line-height: 64px;
+    margin: 0;
+    padding: 0 19px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    transition: box-shadow .3s ease, opacity .3s ease;
+}
+.social-bottom__button img {
+    margin-right: 10px;
+}
+.social-bottom__button,
+.social-bottom__button:hover,
+.social-bottom__button:visited,
+.social-bottom__button:focus,
+.social-bottom__button:active {
+    color: var(--base-contrast);
+    text-decoration: none;
+}
+.social-bottom__button:hover {
+    opacity: .7;
+}
+.social-bottom__button:focus,
+.social-bottom__button:active {
+    box-shadow: 0 4px 4px transparent;
+}
+.social-bottom__button--facebook {}
+.social-bottom__button--twitter {}
 /* ----------- footer ---------------- */
 .footer {
     background-color: var(--base-bg);
