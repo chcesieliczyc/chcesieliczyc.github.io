@@ -1,0 +1,4 @@
+{"name":"Chcę Się Liczyć","short_name":"chcesieliczyc.pl","icons":[
+{"src":"assets/icon/android-chrome-192x192.png","sizes":"192x192","type":"image/png"},
+{"src":"assets/icon/android-chrome-512x512.png","sizes":"512x512","type":"image/png"}
+],"theme_color":"#000a8f","background_color":"#ffffff","display":"standalone"}
