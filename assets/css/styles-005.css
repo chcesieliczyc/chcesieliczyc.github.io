@@ -13,20 +13,16 @@ html {
     --info-box-shadow: 0 4px 4px rgba(37, 150, 255, 0.05), 0 4px 16px rgba(37, 150, 255, 0.15);
     --info-box-radius: 8px;
 }
-
 body {
     font-family: 'Montserrat', sans-serif;
     color: var(--base);
 }
-
 html.debug {
     background: url("../tmp/1920px.png") top center;
 }
-
 .debug body {
     background-color: rgba(255,255,255,0.4);
 }
-
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, .btn, .btn-simple, a, .td-name, td {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
@@ -210,18 +206,12 @@ a[id]:not([href]):target + section .target-indicator {
     background-color: var(--base);
     color: var(--base-contrast);
 }
-
 .main {
     padding-top: 96px;
 }
-.debug .main {
-    margin-bottom: 500px;
-}
-
 .section {
     padding: 20px 0;
 }
-
 .social {}
 .social__container {
     text-align: right;
@@ -697,7 +687,7 @@ a[id]:not([href]):target + section .target-indicator {
 /* ---------- partner ---------------- */
 .partners {
     background: linear-gradient(180deg, transparent 0%, transparent 50%, var(--base-bg-light) 100%), transparent;
-    padding: 30px 0 252px;
+    padding: 30px 0 208px;
 }
 .debug .partners {
     background: none;
@@ -779,30 +769,58 @@ a[id]:not([href]):target + section .target-indicator {
 .footer__content {
     display: flex;
     justify-content: stretch;
+    padding: 0;
 }
-
 .footer__contact,
 .footer__copyrights {
-    color: #fff;
+    color: var(--base-contrast);
     flex: 1;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
 }
-
 .footer__copyrights {
     text-align: left;
+    margin-left: -15px;
 }
-
+.footer__copyrights img {
+    margin-right: 13px;
+}
 .footer__contact {
+    line-height: 64px;
     text-align: right;
 }
-
-.footer__contact a,
-.footer__contact a:hover,
-.footer__contact a:visited,
-.footer__contact a:active,
-.footer__contact a:focus {
-    color: #fff;
+.footer-link {
+    transition: opacity .3s ease;
 }
-
+.footer-link,
+.footer-link:hover,
+.footer-link:visited,
+.footer-link:active,
+.footer-link:focus {
+    color: var(--base-contrast);
+    text-decoration: none;
+}
+.footer-link:hover,
+.footer-link:visited,
+.footer-link:active {
+    opacity: .7;
+}
+.footer-link--email {
+    margin-right: 41px;
+}
+.footer-link--facebook,
+.footer-link--tweeter {
+    display: inline-block;
+    vertical-align: middle;
+}
+.footer-link img {
+    display: block;
+}
+.footer-link--facebook {
+    margin-right: 31px;
+}
+.footer-link--tweeter {}
 .navbar .navbar-collapse.collapse:target {
     display: block !important;
 }

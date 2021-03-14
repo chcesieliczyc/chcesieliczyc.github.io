@@ -14,7 +14,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="chcesieliczyc.pl" />
     <meta property="og:description" content="Spis Powszechny 2021 – pokaż w co naprawdę wierzysz. Sprawdź, jak odpowiedzieć na pytania w zgodzie ze sobą." />
-    <meta property="og:image" content="https://chcesieliczyc.pl/assets/img/chcesieliczyc.png" />
+    <meta property="og:image" content="https://chcesieliczyc.pl/assets/img/chcesieliczyc_pl.png" />
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -76,6 +76,7 @@
         <p class="container social__container">
            <strong class="social__callout">Podziel się:</strong>
             <a
+                    title="Podziel się na Facebooku"
                     class="social__button social__button--facebook"
                     href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Ffacebook.com%2Fchcesieliczyc"
                     target="_blank">
@@ -83,7 +84,8 @@
             </a>
             <a
                     class="social__button social__button--twitter"
-                    href="https://twitter.com/intent/tweet?original_referer=https://chcesieliczyc.pl&text=Jakie%20wyznanie%20podasz%20w%20Spisie%20Powszechnym%3F%20Wejd%C5%BA%20na%3A%20&url=https://chcesieliczyc.pl&via=chcesieliczyc&hashtags=chcesieliczyc"
+                    title="Zatłituj o nas"
+                    href="https://twitter.com/intent/tweet?original_referer=https://chcesieliczyc.pl&text=Jakie%20wyznanie%20podasz%20w%20Spisie%20Powszechnym%3F%0A%0AWejd%C5%BA%20na%20chcesieliczyc.pl.%20Zobacz%2C%20jak%20si%C4%99%20spisa%C4%87%20i%20odpowiedzie%C4%87%20na%20pytanie%20o%20wyznanie%20w%20zgodzie%20ze%20sob%C4%85.%0A%0AJeszcze%20si%C4%99%20wahasz%3F%20Odpowiemy%20na%20Twoje%20pytania%20i%20w%C4%85tpliwo%C5%9Bci.%0A%0Achcesieliczyc.pl%20%23chcesieliczyc%20%40chcesieliczyc"
                     target="_blank">
                 <img src="assets/icon/twitter-icon.svg" alt="Twitter">
             </a>
@@ -491,9 +493,9 @@
                         Facebook
                     </a>
                     <a
-                            title="Zatwituj o nas"
+                            title="Zatłituj o nas"
                             class="btn social-bottom__button social-bottom__button--twitter"
-                            href="https://twitter.com/intent/tweet?original_referer=https://chcesieliczyc.pl&text=Jakie%20wyznanie%20podasz%20w%20Spisie%20Powszechnym%3F%20Wejd%C5%BA%20na%3A%20&url=https://chcesieliczyc.pl&via=chcesieliczyc&hashtags=chcesieliczyc"
+                            href="https://twitter.com/intent/tweet?original_referer=https://chcesieliczyc.pl&text=Jakie%20wyznanie%20podasz%20w%20Spisie%20Powszechnym%3F%0A%0AWejd%C5%BA%20na%20chcesieliczyc.pl.%20Zobacz%2C%20jak%20si%C4%99%20spisa%C4%87%20i%20odpowiedzie%C4%87%20na%20pytanie%20o%20wyznanie%20w%20zgodzie%20ze%20sob%C4%85.%0A%0AJeszcze%20si%C4%99%20wahasz%3F%20Odpowiemy%20na%20Twoje%20pytania%20i%20w%C4%85tpliwo%C5%9Bci.%0A%0Achcesieliczyc.pl%20%23chcesieliczyc%20%40chcesieliczyc"
                             target="_blank">
                         <img src="assets/icon/twitter-invert-icon.svg" alt="[TW]" />
                         Twitter
@@ -510,26 +512,30 @@
                 <li class="partners__box"></li>
                 <li class="partners__box"></li>
                 <li class="partners__box"></li>
-                <li class="partners__box"></li>
-                <li class="partners__box"></li>
-                <li class="partners__box"></li>
-                <li class="partners__box"></li>
             </ul>
         </div>
     </section>
-
-
 </main>
 <footer class="footer">
     <div class="container footer__content">
         <p class="footer__copyrights">
+            <img src="assets/img/logo-invert.svg" alt="Chcę się Liczyć" />
             &copy; 2021 Inicjatywa “Chcę się liczyć”
         </p>
         <p class="footer__contact">
-            <a href="mailto:mail@example.com">mailto@example.com</a>
+            <a href="mailto:kontaktchsl@protonmail.com" class="footer-link footer-link--email">kontaktchsl@protonmail.com</a>
+            &nbsp;
+            <a href="https://facebook.com/chcesieliczyc" class="footer-link footer-link--facebook" target="_blank">
+                <img src="assets/icon/facebook-invert-icon.svg" alt="Facebook" />
+            </a>
+            &nbsp;
+            <a href="https://twitter.com/chcesieliczyc" class="footer-link footer-link--tweeter" target="_blank">
+                <img src="assets/icon/twitter-invert-icon.svg" alt="Twitter" />
+            </a>
         </p>
     </div>
 </footer>
+
 <script>
     const doc = document;
     ((k,s,d,e,b,v = s.getItem(k)) => {
@@ -538,17 +544,5 @@
         v && d.body.removeChild(e);
     })('ciasteczka', localStorage, doc, doc.querySelector('.cookies-and-privacy'), doc.querySelector('.cookies-and-privacy__hide'));
 </script>
-
 </body>
-
-<!--    <script src="jquery/jquery-1.10.2.js" type="text/javascript"></script>-->
-<!--	<script src="assets/js/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>-->
-<!---->
-<!--	<script src="bootstrap3/js/bootstrap.js" type="text/javascript"></script>-->
-<!--	<script src="assets/js/gsdk-checkbox.js"></script>-->
-<!--	<script src="assets/js/gsdk-radio.js"></script>-->
-<!--	<script src="assets/js/gsdk-bootstrapswitch.js"></script>-->
-<!--	<script src="assets/js/get-shit-done.js"></script>-->
-<!--    <script src="assets/js/custom.js"></script>-->
-
 </html>
