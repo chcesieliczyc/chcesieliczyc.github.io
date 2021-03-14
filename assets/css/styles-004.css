@@ -443,7 +443,7 @@ a[id]:not([href]):target + section .target-indicator {
 }
 
 .how-to-login,
-.how-to-religion {
+.how-to-religion__wrapper {
     background: var(--base-contrast);
     box-shadow: var(--info-box-shadow);
     border-radius: var(--info-box-radius);
@@ -451,14 +451,66 @@ a[id]:not([href]):target + section .target-indicator {
 
 .how-to-login {
     margin: 20px 23px;
-    padding: 0 19px;
+    padding: 0 19px 17px;
+    display: flex;
+}
+.how-to-login__census-link {
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    align-items: center;
+    margin: 0 13%;
+}
+.how-to-login__census-link a {
+    font-size: 36px;
+    text-decoration: none;
+}
+.how-to-login__census-link a:hover,
+.how-to-login__census-link a:focus,
+.how-to-login__census-link a:active {
+    text-decoration: underline;
 }
 .how-to-login__title {
     font-size: 32px;
     line-height: 46px;
     margin-bottom: 28px;
 }
-.how-to-religion {}
+
+.how-to-login__text,
+.how-to-login__option {
+    line-height: 24px;
+    font-size: 16px;
+}
+.how-to-login__text {
+    margin-bottom: 21px;
+}
+.how-to-login__option {
+    margin-bottom: 8px;
+}
+.how-to-login__options {
+    margin-bottom: 38px;
+    padding-left: 56px;
+}
+
+.how-to-religion {
+    padding-top: 29px;
+    margin: 0 23px 20px;
+}
+.how-to-religion__wrapper {
+    padding: 8px 34px;
+    position: relative;
+}
+
+.debug .how-to-religion__wrapper {
+    margin-left: calc(25% + 7px);
+    background: none;
+}
+.how-to-religion__wrapper:before {
+    content: url("../img/arrow.svg");
+    left: -112px;
+    position: absolute;
+    top: 21px;
+}
 
 /* ------------ hints ------------------ */
 
