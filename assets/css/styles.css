@@ -748,12 +748,18 @@ a[id]:not([href]):target + section .target-indicator {
 /* ------------ how to ----------------- */
 .how-to {
     background: linear-gradient(180deg, var(--base-bg-light) 0%, #fff 60%, #fff 100%), #fff;
-    margin-bottom: 75px;
     padding-top: 21px;
+    margin-bottom: 0;
+}
+@media (max-width: 575px) {
+    .how-to {
+        padding-bottom: 0;
+    }
 }
 @media (min-width: 576px) {
     .how-to {
         padding-top: 80px;
+        margin-bottom: 75px;
     }
 }
 
@@ -819,19 +825,23 @@ a[id]:not([href]):target + section .target-indicator {
 .how-to-religion__wrapper {
     background: var(--base-contrast);
     box-shadow: var(--info-box-shadow);
-    border-radius: var(--info-box-radius);
+}
+@media (min-width: 576px) {
+    .how-to-login,
+    .how-to-religion__wrapper {
+        border-radius: var(--info-box-radius);
+    }
 }
 
 .how-to-login {
-    margin: 20px 23px;
+    margin: 4px -13px 78px;
     padding: 0 19px 17px;
     display: flex;
     flex-wrap: wrap;
 }
-
-@media (max-width: 575px) {
+@media (min-width: 576px) {
     .how-to-login {
-        margin-bottom: 50px;
+        margin: 20px 23px;
     }
 }
 
@@ -889,26 +899,33 @@ a[id]:not([href]):target + section .target-indicator {
 }
 
 .how-to-religion {
-    padding-top: 29px;
-    margin: 0 23px 20px;
 }
-
 .how-to-religion__wrapper {
-    margin-bottom: 26px;
-    padding: 8px 34px 1px;
-    position: relative;
+    margin-bottom: 10px;
+    padding: 5px 15px;
 }
-
 .debug .how-to-religion__wrapper {
-    margin-left: calc(25% + 7px);
     background: none;
 }
-
-.how-to-religion__wrapper:before {
-    content: url("../img/arrow.svg");
-    left: -119px;
-    position: absolute;
-    top: 21px;
+@media (min-width: 576px) {
+    .how-to-religion {
+        padding-top: 29px;
+        margin: 0 23px 20px;
+    }
+    .how-to-religion__wrapper {
+        margin-bottom: 26px;
+        padding: 8px 34px 1px;
+        position: relative;
+    }
+    .debug .how-to-religion__wrapper {
+        margin-left: calc(25% + 7px);
+    }
+    .how-to-religion__wrapper:before {
+        content: url("../img/arrow.svg");
+        left: -119px;
+        position: absolute;
+        top: 21px;
+    }
 }
 
 .how-to-religion__title {
@@ -963,7 +980,12 @@ a[id]:not([href]):target + section .target-indicator {
 /* ------------ hints ------------------ */
 
 .census-hints-container {
-    margin: 0 18px;
+    margin: -8px -15px 0;
+}
+@media (min-width: 576px) {
+    .census-hints-container {
+        margin: 0 18px;
+    }
 }
 
 .debug .census-hints-container {
@@ -972,9 +994,14 @@ a[id]:not([href]):target + section .target-indicator {
 
 .census-hints {
     background-color: var(--base-bg-em);
-    border-radius: var(--info-box-radius);
     color: var(--base-contrast);
-    padding: 48px 80px;
+    padding: 20px 15px;
+}
+@media (min-width: 576px) {
+    .census-hints {
+        border-radius: var(--info-box-radius);
+        padding: 48px 80px;
+    }
 }
 
 .debug .census-hints {
