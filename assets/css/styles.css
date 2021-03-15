@@ -186,7 +186,12 @@ a[id]:not([href]) {
     height: 0;
     opacity: 0;
     position: relative;
-    top: -100px;
+    top: -70px;
+}
+@media (min-width: 576px) {
+    a[id]:not([href]) {
+        top: -100px;
+    }
 }
 
 a[id]:not([href]):target + .target-indicator,

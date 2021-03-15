@@ -551,6 +551,9 @@
     })('ciasteczka', localStorage, doc, doc.querySelector('.cookies-and-privacy'), doc.querySelector('.cookies-and-privacy__hide'));
     ((c, t) => {
         const m = doc.getElementById(t.href.split('#')[1]);
+        m.addEventListener('click', () => {
+            m.classList.remove(c);
+        });
         t.addEventListener('click', e => {
             e.preventDefault();
             const cls = m.classList;
