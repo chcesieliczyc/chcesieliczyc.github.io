@@ -1,12 +1,13 @@
 <!doctype html>
 <html lang="pl">
+<!--<html lang="pl" class="debug">-->
 <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/png" href="assets/icon/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/icon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/icon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/icon/favicon-16x16.png">
-    <link rel="manifest" href="assets/site.webmanifest">
+    <link rel="manifest" href="assets/site.webmanifest" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>Chcę się liczyć</title>
     <meta property="og:url" content="https://chcesieliczyc.pl" />
@@ -14,72 +15,14 @@
     <meta property="og:title" content="Chcę się liczyć" />
     <meta property="og:description" content="Spis Powszechny 2021 – pokaż w co naprawdę wierzysz. Sprawdź, jak odpowiedzieć na pytania w zgodzie ze sobą." />
     <meta property="og:image" content="https://chcesieliczyc.pl/assets/img/chcesieliczyc_pl.png" />
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-MR72C3N');</script>
-    <!-- End Google Tag Manager -->
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="assets/css/gsdk.css" rel="stylesheet" />
+    <link href="assets/css/styles.css" rel="stylesheet" />
+    <!--     Google Fonts     -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
-    <style>
-        html {
-            --base: #000A8F; /* rgb(0,10,143) */
-            --base-bg: #24296B;
-            --base-bg-light: #EDF4FF;
-        }
-        body {
-            font-family: 'Montserrat', sans-serif;
-            color: var(--base);
-        }
-        h1, h3, p, a{
-            -moz-osx-font-smoothing: grayscale;
-            -webkit-font-smoothing: antialiased;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 600;
-        }
-        h1, h3, p, body {
-            text-align: center;
-        }
-        img {
-            vertical-align: middle;
-            border: 0;
-            margin: 0;
-            display: inline-block;
-        }
-        a {
-            display: inline-block;
-        }
-        button {
-            margin: 0;
-            border: 0;
-            border-radius: 3px;
-            padding: 5px 10px;
-        }
-
-        .cookies-and-privacy {
-            position: fixed;
-            background-color: var(--base-bg);
-            bottom: 0;
-            z-index: 666;
-            left: 0;
-            right: 0;
-            padding: 20px 0;
-            text-align: center;
-        }
-        .cookies-and-privacy__hide {
-            background-color: var(--base-bg-light);
-        }
-        .cookies-and-privacy p,
-        .cookies-and-privacy a,
-        .cookies-and-privacy a:hover,
-        .cookies-and-privacy a:visited,
-        .cookies-and-privacy a:active,
-        .cookies-and-privacy a:focus {
-            color: #fff;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 <aside class="cookies-and-privacy" style="display: none">
@@ -89,21 +32,515 @@
     </p>
     <button class="btn cookies-and-privacy__hide">OK, Rozumiem</button>
 </aside>
-<h1>Chcę się liczyć</h1>
-<br />
-<h3>Jakie wyznanie podasz w Spisie Powszechnym?</h3>
-<p>Startujemy 15 marca</p>
-<p>
-<a href="https://facebook.com/chcesieliczyc" target="_blank">
-    <img src="assets/icon/facebook-icon.svg" alt="Facebook" />
-</a>
-&nbsp;
-&nbsp;
-<a href="https://twitter.com/chcesieliczyc" target="_blank">
-    <img src="assets/icon/twitter-icon.svg" alt="Twitter" />
-</a>
-</p>
-<p>email: <a href="mailto:kontaktchsl@protonmail.com">kontaktchsl@protonmail.com</a></p>
+<header>
+    <div class="container">
+        <nav class="navbar navbar-ct navbar-white navbar-fixed-top navbar-fixed-top" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                <a class="navbar-toggle" data-toggle="collapse" href="#navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <a href="/">
+                    <div class="logo-container">
+                        <img src="assets/img/logo.svg" alt="Chcę się liczyć" title="Chcę się liczyć">
+                        <h1 class="brand">Chcę się liczyć</h1>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+              <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#o-co-chodzi">O co chodzi?</a></li>
+                  <li><a href="#jak-sie-spisac">Jak się spisać?</a></li>
+                  <li><a href="#wyznanie">Wyznanie</a></li>
+                  <li><a href="#pytania-i-odpowiedzi">Pytania</a></li>
+                  <li><a href="#po-co-mam-brac-udzial">Po co brać udział?</a></li>
+               </ul>
+
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+    </div><!--  end container-->
+
+</header>
+
+
+
+<main class="main">
+    <div class="section social">
+        <p class="container social__container">
+           <strong class="social__callout">Podziel się:</strong>
+            <a
+                    title="Podziel się na Facebooku"
+                    class="social__button social__button--facebook"
+                    href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Ffacebook.com%2Fchcesieliczyc"
+                    target="_blank">
+                <img src="assets/icon/facebook-icon.svg" alt="Facebook">
+            </a>
+            <a
+                    class="social__button social__button--twitter"
+                    title="Zatłituj o nas"
+                    href="https://twitter.com/intent/tweet?original_referer=https://chcesieliczyc.pl&text=Jakie%20wyznanie%20podasz%20w%20Spisie%20Powszechnym%3F%0A%0AWejd%C5%BA%20na%20chcesieliczyc.pl.%20Zobacz%2C%20jak%20si%C4%99%20spisa%C4%87%20i%20odpowiedzie%C4%87%20na%20pytanie%20o%20wyznanie%20w%20zgodzie%20ze%20sob%C4%85.%0A%0AJeszcze%20si%C4%99%20wahasz%3F%20Odpowiemy%20na%20Twoje%20pytania%20i%20w%C4%85tpliwo%C5%9Bci.%0A%0Achcesieliczyc.pl%20%23chcesieliczyc%20%40chcesieliczyc"
+                    target="_blank">
+                <img src="assets/icon/twitter-icon.svg" alt="Twitter">
+            </a>
+        </p>
+    </div>
+    <section class="section base-info">
+        <div class="container intro">
+        <div class="row">
+            <header class="col-md-6">
+                <div class="main-header">
+                    <h1 class="main-header__heading">Spis Powszechny Online</h1>
+                    <h3 class="main-header__dates">
+                        1.04 - 30.06
+                    </h3>
+                </div>
+            </header>
+            <div class="col-md-6">
+                <p class="intro-text">
+                    <strong class="intro-text__important intro-text__important--first">
+                        Już za chwilę kolejny Spis Powszechny.
+                    </strong>
+                    <br class="hidden"/>
+                    <strong class="intro-text__important intro-text__important--second">
+                        Jego wyniki pokażą, jak nasz kraj zmienił się w ciągu ostatniej dekady.
+                    </strong>
+                </p>
+                <p class="intro-text intro-text--last-census">
+                    Według poprzedniego spisu niemal wszyscy wyznajemy katolicyzm.
+                    To powszechne przekonanie ma ogromny wpływ na politykę i nasze życie.
+                    Rzekomo wszyscy jesteśmy w Kościele. Czy to oznacza, że Polska powinna stać się państwem wyznaniowym?
+                    Czy episkopat powinien dyktować ustawy?
+
+                </p>
+                <p class="intro-text intro-text--religion">
+                    Przez ostatnie dziesięć lat wiele osób oddaliło się od religii i Kościoła katolickiego.
+                    Zastanów się, czy w rubryce wyznanie zaznaczać “<em>katolicyzm</em>”.<br/>
+                    Czas pokazać, w co naprawdę wierzymy.
+                </p>
+                <p class="intro-text intro-text--change">
+                    <strong>
+                        Sprawdź, jak się spisać i odpowiedzieć na pytania w zgodzie ze sobą.
+                    </strong>
+                </p>
+
+                <footer class="intro-footer">
+                    <a class="btn btn-fill btn--cta intro-footer__cta" href="#jak-sie-spisac">Liczę się</a>
+                </footer>
+            </div>
+        </div>
+        </div>
+
+        <div class="container summary">
+        <div class="row info-boxes">
+            <div class="col-lg-3 col-md-6 col-xs-12 info-box">
+                <article class="info-box__container">
+                    <img src="assets/icon/calendar-icon.svg" class="info-box__icon" alt="Kiedy?"/>
+                    <h5 class="info-box__title">Raz na 10 lat</h5>
+                    <p>
+                        Pomóż pokazać, jaka jest dzisiaj Polska. Dane ze spisu <strong>na następne 10 lat</strong>
+                        utrwalą obraz tego, jak wygląda nasz kraj i wpłyną na kształt relacji państwo - Kościół.
+                    </p>
+                    <p>
+                        Bez Ciebie obraz będzie niepełny.
+                    </p>
+                </article>
+            </div>
+            <div class="col-lg-3 col-md-6 col-xs-12 info-box">
+                <article class="info-box__container">
+                    <img src="assets/icon/house-icon.svg" class="info-box__icon" alt="Gdzie?"/>
+                    <h5 class="info-box__title">Spisujemy się mieszkaniami</h5>
+                    <p>Każde mieszkanie wypełnia <strong>jeden formularz online</strong>.</p>
+                    <p>Upewnij się, że przy tym będziesz.</p>
+                    <p><strong>Nie odmawiaj odpowiedzi. Spis jest anonimowy.</strong></p>
+                </article>
+            </div>
+            <div class="col-lg-3 col-md-6 col-xs-12 info-box">
+                <article class="info-box__container">
+                    <img src="assets/icon/receipt-icon.svg" class="info-box__icon" alt="Jak?"/>
+                    <h5 class="info-box__title">Nie idź na skróty</h5>
+                    <p>W niektórych pytaniach, <strong>najpopularniejsze odpowiedzi są na wierzchu</strong>.</p>
+                    <p>Co jeśli Twoja do nich nie należy?</p>
+                    <p>Pokażemy, <strong>jak znaleźć właściwą</strong>.</p>
+                </article>
+            </div>
+            <div class="col-lg-3 col-md-6 col-xs-12 info-box">
+                <article class="info-box__container">
+                    <img src="assets/icon/church-icon.svg" class="info-box__icon" alt="Dlaczego?"/>
+                    <h5 class="info-box__title">Wyznanie</h5>
+                    <p>
+                        Czy w Polsce żyją prawie sami katolicy i katoliczki?
+                        Ile osób określa się tak nie wiedząc, że w formularzu są inne możliwości?
+                        Czy chcesz deklarować się jako katolik/ katoliczka tylko z powodu decyzji Twoich rodziców?
+                    </p>
+                    <p><strong>Czas to sprawdzić.</strong></p>
+                </article>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <a id="o-co-chodzi"></a>
+    <section class="section say-what">
+        <div class="container say-what__container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="target-indicator say-what__title">O co chodzi?</h2>
+                    <p class="say-what__text">
+                        <strong>Raz na dekadę</strong> państwo polskie liczy swoich obywateli i obywatelki.
+                        Zbiera też m.in. dane o warunkach mieszkaniowych, relacjach rodzinnych, narodowości i wyznaniu.
+                    </p>
+                    <p class="say-what__text">
+                        <strong>Po co nam</strong> te dane? Na przykład po to, żeby wiedzieć, ile pieniędzy
+                        przeznaczyć w poszczególnych gminach na szkolnictwo, a ile na domy pomocy społecznej,
+                        gdzie budować przedszkola, a gdzie szpitale.
+                    </p>
+                    <p class="say-what__text">
+                        <strong>Dzięki tym danym</strong> partie polityczne wiedzą, ile osób należy do sprzyjających
+                        im grup i z kim muszą się liczyć.
+                    </p>
+                    <p class="say-what__text"><strong>W tym roku</strong> wszyscy musimy spisać się przez internet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section how-to">
+        <div class="container">
+            <div class="row">
+            <header class="col-md-6">
+                <a id="jak-sie-spisac"></a>
+                <h1 class="target-indicator how-to__title">Jak się spisać?</h1>
+            </header>
+            <article class="col-md-6 how-to-prepare">
+                <h2 class="sr-only">Czy trzeba się przygotować</h2>
+                <p class="how-to-prepare__highlight">
+                    Jedno mieszkanie = jeden formularz
+                </p>
+                <p class="how-to-prepare__text">
+                    <strong>Na jedno mieszkanie/ dom jednorodzinny przypada jeden formularz spisowy.</strong>
+                    Pierwsza część to spis zamieszkujących, druga dotyczy warunków mieszkaniowych.
+                    W ostatniej są formularze dla poszczególnych osób. Tam znajduje się m.in. pytanie o wyznanie.
+                </p>
+                <p class="how-to-prepare__text">
+                    <strong>
+                        Najlepiej, żeby każdy wypełnił tę część osobiście, więc upewnij się, że przy tym będziesz.
+                    </strong>
+                </p>
+            </article>
+        </div>
+            <div class="row how-to-login">
+            <article class="col-md-6">
+                <h2 class="how-to-login__title">Logowanie</h2>
+                <p class="how-to-login__text">
+                    Spis odbywa się online na stronie
+                    <a href="https://spis.gov.pl/"
+                       title="Narodowy Spis Powszechny Ludności i Mieszkań 2021 - Strona Informacyjna"
+                       target="_blank">spis.gov.pl</a>.
+                    Do formularza spisowego można zalogować się na trzy sposoby:
+                </p>
+                <ul class="how-to-login__options">
+                    <li class="how-to-login__option">profilem zaufanym</li>
+                    <li class="how-to-login__option">za pomocą numeru PESEL i nazwiska panieńskiego matki</li>
+                    <li class="how-to-login__option">kodem mieszkania otrzymanym w liście Prezesa GUS</li>
+                </ul>
+                <p class="how-to-login__text">
+                    Dokładne informacje dotyczące logowania są również dostępne na stronie spisu.
+                </p>
+            </article>
+                <aside class="col-md-6">
+                    <p class="how-to-login__census-link">
+                        <a href="https://spis.gov.pl/"
+                           title="Narodowy Spis Powszechny Ludności i Mieszkań 2021 - Strona Informacyjna"
+                           target="_blank">www.spis.gov.pl</a>
+                    </p>
+                </aside>
+            </div>
+
+            <a id="wyznanie"></a>
+            <div class="row target-indicator-wrapper how-to-religion">
+            <article class="col-md-9 col-md-offset-3 how-to-religion__wrapper">
+                <h2 class="target-indicator how-to-religion__title">Pytanie o wyznanie</h2>
+                <p class="how-to-religion__text">
+                    <strong>Pytanie o wyznanie</strong> znajdziesz <strong>w trzeciej części formularza spisowego</strong>.
+                    Zawiera ona “<em>formularze osobowe</em>” dotyczące poszczególnych domowników. Pytanie zadawane jest
+                    <strong>zaraz po tych o narodowość i język</strong>.
+                    To właśnie tutaj łatwo się pogubić i udzielić odpowiedzi niezgodnej z własnymi poglądami.
+
+                    <strong>Wiele osób wpisuje też swoje wyznanie nie zastanawiając się nad tym głębiej</strong>,
+                    z rozpędu, “<em>bo zawsze tak było</em>”. Warto nie ulegać takiemu mechanicznemu nawykowi
+                    i przemyśleć odpowiedź.
+
+                </p>
+                <p class="how-to-religion__text"><strong>Przeczytaj uważnie.</strong></p>
+                <p class="how-to-religion__text">
+                    Pytanie składa się z dwóch części. W pierwszej masz do wyboru jedną z trzech odpowiedzi:
+                </p>
+                <ol class="how-to-religion__options">
+                    <li class="how-to-religion__option">należę do wyznania</li>
+                    <li class="how-to-religion__option">nie należę do żadnego wyznania</li>
+                    <li class="how-to-religion__option">nie chcę odpowiadać na to pytanie</li>
+                </ol>
+                <p class="how-to-religion__text">Jeśli wybierzesz odpowiedzi 2 lub 3, wypełnianie tej części się zakończy.</p>
+                <p class="how-to-religion__text">Jeśli wybierzesz odpowiedź 1, pojawi się lista związków wyznaniowych.</p>
+                <p class="how-to-religion__text"><strong>I tutaj sprawa się komplikuje. </strong></p>
+                <p class="how-to-religion__text">
+                    Na początku na liście pojawi się 7 największych kościołów w Polsce.
+                    Jeśli nie znajdujesz na liście wyznania, które chcesz zadeklarować,
+                    <strong>możesz je wpisać własnymi słowami</strong>.
+                    Żeby to zrobić:
+                </p>
+                <ol class="how-to-religion__options">
+                    <li class="how-to-religion__option">
+                        Wybierz odpowiedź “<em>inne wyznanie (podać jakie)</em>”.
+                    </li>
+                    <li class="how-to-religion__option">
+                        Rozwinie się dodatkowa lista. Na niej znajdziesz pozostałe Kościoły i ponownie odpowiedź
+                        “<em>inny (podać jaki)</em>”.
+                    </li>
+                    <li class="how-to-religion__option">
+                        <strong>
+                            Dopiero po wybraniu tej opcji po raz drugi będziesz w stanie wpisać wyznanie,
+                            którego nie ma na liście.
+                        </strong>
+                    </li>
+                </ol>
+                <p class="how-to-religion__text">Nie wiesz, co wpisać? Patrz niżej.</p>
+            </article>
+        </div>
+            <div class="row census-hints-container">
+            <article class="col-md-12 census-hints">
+                <h2 class="census-hints__title">Zwróć uwagę:</h2>
+                <ol class="census-hints__list">
+                    <li class="census-hints__item">
+                        Nie odmawiaj odpowiedzi. Jeśli chcesz, żeby Twój głos się liczył, odpowiedz w zgodzie ze sobą.
+                    </li>
+                    <li class="census-hints__item">
+                        Jeśli nie masz wątpliwości, że należysz do konkretnego wyznania, wybierz je z listy.
+                        <strong>
+                            Warto zaznaczyć - chrzest (np. w Kościele katolickim) nie oznacza, że musisz podawać
+                            się za jego członka/członkinię.
+                        </strong>
+                        Odpowiadaj tak, jak się czujesz.
+                        Pytanie o wyznanie to pytanie o <strong>poczucie przynależności</strong>.
+                    </li>
+                    <li class="census-hints__item">
+                        Jeśli jesteś osobą bezwyznaniową agnostykiem/ agnostyczką lub ateistą/ ateistką,
+                        <strong>wybierz opcję “<em>nie należę do żadnego wyznania</em>”</strong>.
+<!--                        <ol class="non-believers-hints">-->
+<!--                            <li class="non-believers-hint">-->
+<!--                                wybrać opcję “<em>nie należę do żadnego wyznania</em>”-->
+<!--                            </li>-->
+<!--                            <li class="non-believers-hint">-->
+<!--                                wybrać “<em>należę do wyznania</em>” i wpisać “<em>ateizm</em>” lub “<em>agnostycyzm</em>”-->
+<!--                                w pole “<em>inny (podać jaki)</em>”. Pozwoli to dokładniej policzyć osoby bezwyznaniowe i-->
+<!--                                zwiększyć ich widoczność w społeczeństwie.-->
+<!--                            </li>-->
+<!--                        </ol>-->
+                    </li>
+                    <li class="census-hints__item">
+                        Jeśli nadal masz wątpliwości, pytania i odpowiedzi w następnej sekcji pomogą Ci je rozwiać.
+                    </li>
+                </ol>
+            </article>
+        </div>
+        </div>
+    </section>
+
+    <a id="pytania-i-odpowiedzi"></a>
+    <section class="section faq">
+        <div class="container faq__container">
+            <header class="row">
+                <div class="col-md-12">
+                    <h1  class="target-indicator fag__title">A co mogę wpisać, jeśli…</h1>
+                    <h3 class="faq__subtitle">i inne pytania</h3>
+                </div>
+            </header>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-6">
+                <details class="faq-question">
+                    <summary class="faq-question__summary">
+                        <h4>Jestem ochrzczony/a, ale od lat nie chodzę do kościoła, czy muszę zaznaczać Kościół rzymskokatolicki?</h4>
+                    </summary>
+                    <p>
+                        Jeśli nie czujesz się związana/y z instytucją, do której “<em>formalnie</em>” należysz, możesz
+                        określić się inaczej. Na przykład:
+                    </p>
+                <ul>
+                    <li>chrześcijaństwo - jeśli wierzysz w Jezusa Chrystusa, ale nie chcesz być liczony/a jako katolik/ katoliczka</li>
+                    <li>teizm - jeśli wierzysz w osobowego Boga, który ma wpływ na Twoje życie</li>
+                    <li>deizm - jeśli wierzysz w bezosobowego boga, który nie wpływa na nasze życie</li>
+                    <li>
+                        zaznaczyć “<em>nie należę do żadnego wyznania</em>” - jeśli religia nie ma już dla Ciebie znaczenia,
+                        nie czujesz się częścią żadnej wspólnoty religijnej, nie wiesz czy bogowie istnieją lub nie wierzysz w ich istnienie.
+                    </li>
+                </ul>
+            </details>
+                <details class="faq-question">
+                    <summary class="faq-question__summary">
+                        <h4>Wierzę w Boga, ale coraz dalej mi do Kościoła katolickiego i nie popieram jego polityki. Jak to wyrazić?</h4>
+                    </summary>
+                    <p>
+                        Możesz wpisać “<em>chrześcijaństwo</em>”. Deklarujesz wtedy wiarę w Boga i Jezusa Chrystusa, ale nie
+                        jesteś liczony/a jako członek/ członkini Kościoła katolickiego.
+                    </p>
+                </details>
+                <details class="faq-question">
+                    <summary class="faq-question__summary">
+                        <h4>Czy w spisie jest pole dla ateistów/ ateistek i agnostyków/ agnostyczek?</h4>
+                    </summary>
+                    <p>
+                        Na liście odpowiedzi nie ma ateizmu i agnostycyzmu. Wybierz opcję “<em>nie należę do żadnego wyznania</em>”.
+                    </p>
+                </details>
+                <details class="faq-question">
+                    <summary class="faq-question__summary">
+                        <h4>Dlaczego nie mogę zaznaczyć po prostu inne?</h4>
+                    </summary>
+                    <p>
+                        Formularz spisowy zakłada, że po wybraniu odpowiedzi “<em>inny (podać jaki)</em>”
+                        wpisujesz odpowiedź własnymi słowami. Jeśli nie chcesz się określać, możesz w to
+                        pole wpisać po prostu “<em>inne</em>” / “<em>inny</em>”.
+                    </p>
+                </details>
+                <details class="faq-question">
+                    <summary class="faq-question__summary">
+                        <h4>Czy to prawda, że religia rodziców jest automatycznie przepisywana na dzieci?</h4>
+                    </summary>
+                    <p>
+                        Istnieje taka możliwość, jeśli mieszkacie razem i Twoje wyznanie pozostanie niewypełnione.
+                        W 2011 roku braki danych w tym pytaniu uzupełniano na podstawie odpowiedzi pozostałych
+                        domowników/domowniczek. Dlatego najlepiej osobiście to sprawdzić i wpisać odpowiedź
+                        zgodną ze swoimi poglądami.
+                    </p>
+                </details>
+                <details class="faq-question">
+                    <summary class="faq-question__summary">
+                        <h4>Czy podane przeze mnie wyznanie będzie przypisane do mojego numeru PESEL? Kto ma dostęp do moich danych?</h4>
+                    </summary>
+                    <p>
+                        Nie, odpowiedź na to pytanie nie zostanie przypisana do numeru PESEL. Spis jest anonimowy.
+                        Dane uczestników zostają w GUSie, który publikuje tylko statystyki odpowiedzi. Na przykład -
+                        procenty poszczególnych wyznań w całym kraju / województwie. Więcej o anonimowości spisu
+                        poczytaj na stronie <a href="https://spis.gov.pl/bezpieczenstwo-danych/" target="_blank">spis.gov.pl/bezpieczenstwo-danych/</a>.
+                    </p>
+                </details>
+
+                <details class="faq-question">
+                    <summary class="faq-question__summary">
+                        <h4>Dlaczego tak mocno zwracacie uwagę na pytanie o wyznanie?</h4>
+                    </summary>
+                    <p>
+                        Bo tutaj dane oficjalne najbardziej odbiegają od rzeczywistości i tworzą fałszywy obraz
+                        jednolicie katolickiej Polski. Według obliczeń samego Kościoła katolickiego tylko około
+                        27% Polaków i Polek uczestniczy w obrzędach religijnych. Jednocześnie, wobec ostatnich
+                        wydarzeń i wychodzących na światło dzienne faktów, coraz więcej osób poddaje refleksji
+                        swój stosunek do religii i Kościoła. Spis Powszechny jest idealną okazją, żeby sprawdzić,
+                        jak bardzo sformułowanie “Polak-katolik” odbiega od prawdy.
+                    </p>
+                </details>
+
+                <details class="faq-question">
+                    <summary class="faq-question__summary">
+                        <h4>Czy spis odbywa się tylko przez internet?</h4>
+                    </summary>
+                    <p>
+                        Nie, istnieje też możliwość, że osoba dokonująca spisu zadzwoni do Ciebie lub osobiście
+                        odwiedzi Cię w domu/ mieszkaniu. Samospis internetowy jest jednak w tym roku po raz pierwszy
+                        podstawowym sposobem udziału w spisie i większość z nas powinna spisać się w ten sposób.
+                    </p>
+                </details>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <a id="po-co-mam-brac-udzial"></a>
+    <section class="section why-would-i">
+        <div class="container why-would-i__container">
+            <div class="row">
+                <div class="col-md-7">
+                    <h2 class="target-indicator why-would-i__title">Po co w ogóle brać udział?</h2>
+                    <p class="why-would-i__text">Chcesz się liczyć? Policz się sam/a.</p>
+                    <p class="why-would-i__text">
+                        Rezygnując z udziału w spisie, znikasz, tracisz głos. Podobnie jak w przypadku, kiedy nie
+                        idziesz głosować. Odrzucasz możliwość odpowiadania zgodnie z prawdą i własnym sumieniem.
+                        W przypadku wyznania może Ci nawet zostać przypisana odpowiedź Twoich rodziców.
+                    </p>
+                    <p class="why-would-i__text">
+                        A wyznanie ma szczególne znaczenie. Od lat mówi się, że 96% Polaków i Polek to katolicy i
+                        katoliczki (dane ze spisu w 2011 roku). Trudno uwierzyć, że tak jest naprawdę, skoro tylko
+                        27% z nas regularnie uczestniczy we mszach.
+                    </p>
+                    <p class="why-would-i__text">
+                        Tylko osobisty udział w spisie zapewnia, że udzielisz takiej odpowiedzi, jakiej zechcesz.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <aside class="social-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-7 col-md-8 col-sm-10 col-xs-12 col-md-offset-1 social-bottom__wrapper">
+                    <h2 class="social-bottom__title">Udostępnij:</h2>
+                    <a
+                            title="Podziel się na Facebooku"
+                            class="btn social-bottom__button social-bottom__button--facebook"
+                            href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Ffacebook.com%2Fchcesieliczyc"
+                            target="_blank">
+                        <img src="assets/icon/facebook-invert-icon.svg" alt="[FB]" />
+                        Facebook
+                    </a>
+                    <a
+                            title="Zatłituj o nas"
+                            class="btn social-bottom__button social-bottom__button--twitter"
+                            href="https://twitter.com/intent/tweet?original_referer=https://chcesieliczyc.pl&text=Jakie%20wyznanie%20podasz%20w%20Spisie%20Powszechnym%3F%0A%0AWejd%C5%BA%20na%20chcesieliczyc.pl.%20Zobacz%2C%20jak%20si%C4%99%20spisa%C4%87%20i%20odpowiedzie%C4%87%20na%20pytanie%20o%20wyznanie%20w%20zgodzie%20ze%20sob%C4%85.%0A%0AJeszcze%20si%C4%99%20wahasz%3F%20Odpowiemy%20na%20Twoje%20pytania%20i%20w%C4%85tpliwo%C5%9Bci.%0A%0Achcesieliczyc.pl%20%23chcesieliczyc%20%40chcesieliczyc"
+                            target="_blank">
+                        <img src="assets/icon/twitter-invert-icon.svg" alt="[TW]" />
+                        Twitter
+                    </a>
+                </div>
+            </div>
+        </div>
+    </aside>
+<!--    <section class="section partners">-->
+<!--        <div class="container">-->
+<!--            <h2 class="partners__title">Partnerzy</h2>-->
+<!--            <ul class="partners__list">-->
+<!--                <li class="partners__box"></li>-->
+<!--                <li class="partners__box"></li>-->
+<!--                <li class="partners__box"></li>-->
+<!--                <li class="partners__box"></li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--    </section>-->
+</main>
+<footer class="footer">
+    <div class="container footer__content">
+        <p class="footer__copyrights">
+            <img src="assets/img/logo-invert.svg" alt="Chcę się Liczyć" />
+            &copy; 2021 Inicjatywa “Chcę się liczyć”
+        </p>
+        <p class="footer__contact">
+            <a href="mailto:kontaktchsl@protonmail.com" class="footer-link footer-link--email">kontaktchsl@protonmail.com</a>
+            &nbsp;
+            <a href="https://facebook.com/chcesieliczyc" class="footer-link footer-link--facebook" target="_blank">
+                <img src="assets/icon/facebook-invert-icon.svg" alt="Facebook" />
+            </a>
+            &nbsp;
+            <a href="https://twitter.com/chcesieliczyc" class="footer-link footer-link--tweeter" target="_blank">
+                <img src="assets/icon/twitter-invert-icon.svg" alt="Twitter" />
+            </a>
+        </p>
+    </div>
+</footer>
 
 <script>
     const doc = document;
@@ -113,9 +550,5 @@
         v && d.body.removeChild(e);
     })('ciasteczka', localStorage, doc, doc.querySelector('.cookies-and-privacy'), doc.querySelector('.cookies-and-privacy__hide'));
 </script>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MR72C3N"
-                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 </body>
 </html>

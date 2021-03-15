@@ -235,6 +235,12 @@ a[id]:not([href]):target + section .target-indicator {
 .navbar.navbar-white .navbar-toggle .icon-bar {
     background-color: var(--base);
 }
+@media (max-width: 575px) {
+    .navbar .navbar-toggle {
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+}
 
 .logo-container {
     display: flex;
@@ -250,13 +256,16 @@ a[id]:not([href]):target + section .target-indicator {
 }
 
 @media (max-width: 575px) {
+    .logo-container {
+        padding-top: 15px;
+    }
     .logo-container img {
         height: 36px;
     }
 
     .logo-container .brand {
         font-size: 16px;
-        line-height: 54px;
+        line-height: 38px;
     }
 }
 
