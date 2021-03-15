@@ -62,6 +62,9 @@ a:focus {
     .container {
         width: 1370px;
     }
+    .col-xl-6 {
+        width: 50%;
+    }
 }
 
 .navbar-collapse .nav li {
@@ -275,22 +278,41 @@ a[id]:not([href]):target + section .target-indicator {
 }
 
 .section {
-    padding: 20px 0;
+    padding: 5px 0;
 }
 
-.social {
+@media (min-width: 576px) {
+    .section {
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 575px) {
+    .social {
+        padding: 0;
+    }
 }
 
 .social__container {
     text-align: right;
-    line-height: 38px;
+    line-height: 24px;
+}
+@media (min-width: 576px) {
+    .social__container {
+        line-height: 38px;
+    }
 }
 
 .social__callout {
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 600;
     color: var(--social);
     margin-right: 10px;
+}
+@media (min-width: 576px) {
+    .social__callout {
+        font-size: 24px;
+    }
 }
 
 .social__button {
@@ -301,6 +323,24 @@ a[id]:not([href]):target + section .target-indicator {
     position: relative;
     top: -4px;
     transition: opacity .3s ease;
+}
+
+@media (max-width: 575px) {
+
+    .social__button {
+        padding: 0 3px;
+    }
+}
+.social__button img {
+    width: 24px;
+    height: 24px;
+}
+
+@media (min-width: 576px) {
+    .social__button img {
+        width: auto;
+        height: auto;
+    }
 }
 
 .social__button:hover {
@@ -315,6 +355,11 @@ a[id]:not([href]):target + section .target-indicator {
 .base-info {
     background: linear-gradient(180deg, #fff 0%, var(--base-bg-light) 100%), #fff;
     padding-bottom: 57px;
+}
+@media (max-width: 575px) {
+    .base-info {
+        padding: 0;
+    }
 }
 
 .debug .base-info {
@@ -360,6 +405,7 @@ a[id]:not([href]):target + section .target-indicator {
 @media (min-width: 576px) {
     .main-header__heading {
         font-size: 44px;
+        line-height: 64px;
         width: 410px;
     }
 }
