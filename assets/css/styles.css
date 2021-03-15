@@ -304,6 +304,9 @@ a[id]:not([href]):target + section .target-indicator {
         padding-top: 96px;
     }
 }
+.debug .main {
+    background: none;
+}
 
 .section {
     padding: 5px 0;
@@ -842,14 +845,15 @@ a[id]:not([href]):target + section .target-indicator {
 }
 
 .how-to-login {
-    margin: 4px -13px 78px;
-    padding: 0 19px 17px;
+    padding: 0 0 17px;
+    margin: 4px -13px 105px;
     display: flex;
     flex-wrap: wrap;
 }
 @media (min-width: 576px) {
     .how-to-login {
         margin: 20px 23px;
+        padding: 0 19px 17px;
     }
 }
 
@@ -873,28 +877,55 @@ a[id]:not([href]):target + section .target-indicator {
 }
 
 @media (max-width: 575px) {
-    .how-to-login__census-link a {
-        font-size: 16px;
-        position: relative;
-        top: 70px;
+    .how-to-login__census-link {
+        height: 21px;
+        margin: 0;
+        width: 88vw;
         text-align: center;
-        width: 70vw;
+    }
+    .how-to-login__census-link a {
+        display: block;
+        font-size: 24px;
+        position: relative;
+        top: 80px;
+        text-align: center;
+        width: 100%;
     }
 }
 
 .how-to-login__title {
-    font-size: 32px;
-    line-height: 46px;
-    margin-bottom: 28px;
+    font-size: 20px;
+    line-height: 33px;
+    margin-bottom: 19px;
+}
+@media (min-width: 576px) {
+    .how-to-login__title {
+        font-size: 32px;
+        line-height: 46px;
+        margin-bottom: 28px;
+    }
 }
 
 .how-to-login__text,
 .how-to-login__option {
-    line-height: 24px;
+    line-height: 20px;
 }
 
-.how-to-login__text {
-    margin-bottom: 21px;
+.how-to-login__text:not(:last-child) {
+    margin-bottom: 16px;
+}
+.how-to-login__text:last-child {
+    margin-bottom: 0;
+}
+@media (min-width: 576px) {
+    .how-to-login__text,
+    .how-to-login__option {
+        line-height: 24px;
+    }
+
+    .how-to-login__text {
+        margin-bottom: 21px;
+    }
 }
 
 .how-to-login__option {
@@ -902,8 +933,14 @@ a[id]:not([href]):target + section .target-indicator {
 }
 
 .how-to-login__options {
-    margin-bottom: 38px;
-    padding-left: 56px;
+    margin-bottom: 18px;
+    padding-left: 24px;
+}
+@media (min-width: 576px) {
+    .how-to-login__options {
+        margin-bottom: 38px;
+        padding-left: 56px;
+    }
 }
 
 .how-to-religion {
