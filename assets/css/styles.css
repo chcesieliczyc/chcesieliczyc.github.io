@@ -34,6 +34,16 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, .btn, 
     font-weight: 600;
 }
 
+p, li {
+    font-size: 14px;
+}
+
+@media (min-width: 576px) {
+    p, li {
+        font-size: 16px;
+    }
+}
+
 a {
     color: var(--base);
     text-decoration: underline;
@@ -232,6 +242,17 @@ a[id]:not([href]):target + section .target-indicator {
     margin: 0 0 0 25px;
 }
 
+@media (max-width: 575px) {
+    .logo-container img {
+        height: 36px;
+    }
+
+    .logo-container .brand {
+        font-size: 16px;
+        line-height: 54px;
+    }
+}
+
 .btn--cta.btn-fill {
     background-color: var(--social);
     color: var(--base-contrast);
@@ -304,32 +325,60 @@ a[id]:not([href]):target + section .target-indicator {
 
 .main-header {
     background: url(../img/poland.svg) center -5px no-repeat;
-    min-height: 300px;
-    margin-left: 20px;
     padding: 20px 0;
 }
 
+.main-header {
+    background-size: contain;
+    margin: 0 auto;
+    width: 300px;
+    min-height: 250px;
+}
+
+@media (min-width: 576px) {
+    .main-header {
+        background-size: auto;
+        min-height: 300px;
+        margin-left: 20px;
+        width: auto;
+    }
+}
+
 .main-header__heading {
-    font-size: 44px;
-    line-height: 64px;
+    font-size: 26px;
+    line-height: 32px;
     margin: 30px auto 0;
-    width: 410px;
+    max-width: 90vw;
     padding-left: 4px;
     text-align: center;
 }
 
+@media (min-width: 576px) {
+    .main-header__heading {
+        font-size: 44px;
+        width: 410px;
+    }
+}
+
 .main-header__dates {
-    font-size: 64px;
-    line-height: 64px;
+    font-size: 32px;
+    line-height: 40px;
     margin: 17px auto 33px;
-    width: 410px;
+    max-width: 90vw;
     text-align: center;
     padding-left: 4px;
+}
+
+@media (min-width: 576px) {
+    .main-header__dates {
+        font-size: 64px;
+        line-height: 64px;
+        width: 410px;
+    }
 }
 
 .intro-text {
     line-height: 25px;
-    font-size: 16px;
 }
 
 .intro-text__important {
@@ -343,7 +392,6 @@ a[id]:not([href]):target + section .target-indicator {
 }
 
 .intro-text__important--second {
-    font-size: 16px;
     line-height: 49px;
 }
 
@@ -457,6 +505,18 @@ a[id]:not([href]):target + section .target-indicator {
     padding-bottom: 90px;
 }
 
+@media (max-width: 575px) {
+    .say-what__container {
+        padding-bottom: 80vw;
+        background-size: contain;
+    }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+    .say-what__container {
+        padding-bottom: 500px;
+    }
+}
+
 .say-what__title {
     font-size: 48px;
     line-height: 48px;
@@ -466,7 +526,6 @@ a[id]:not([href]):target + section .target-indicator {
 
 .say-what__text {
     font-weight: 500;
-    font-size: 16px;
     line-height: 24px;
     margin-bottom: 23px;
     padding-left: 26px;
@@ -474,6 +533,13 @@ a[id]:not([href]):target + section .target-indicator {
 
 .say-what__text strong {
     font-size: 18px;
+}
+
+@media (max-width: 575px) {
+    .say-what__title {
+        font-size: 26px;
+        line-height: 36px;
+    }
 }
 
 /* ------------ how to ----------------- */
@@ -493,6 +559,13 @@ a[id]:not([href]):target + section .target-indicator {
     padding-left: 26px;
 }
 
+@media (max-width: 575px) {
+    .how-to__title {
+        font-size: 26px;
+        line-height: 36px;
+    }
+}
+
 .how-to-prepare {
     padding: 40px 40px 45px 0;
 }
@@ -506,8 +579,14 @@ a[id]:not([href]):target + section .target-indicator {
     text-align: center;
 }
 
+@media (max-width: 575px) {
+    .how-to-prepare__highlight {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
 .how-to-prepare__text {
-    font-size: 16px;
     line-height: 24px;
     padding-left: 16px;
     margin-bottom: 24px;
@@ -524,6 +603,13 @@ a[id]:not([href]):target + section .target-indicator {
     margin: 20px 23px;
     padding: 0 19px 17px;
     display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 575px) {
+    .how-to-login {
+        margin-bottom: 50px;
+    }
 }
 
 .how-to-login__census-link {
@@ -545,6 +631,16 @@ a[id]:not([href]):target + section .target-indicator {
     text-decoration: underline;
 }
 
+@media (max-width: 575px) {
+    .how-to-login__census-link a {
+        font-size: 16px;
+        position: relative;
+        top: 70px;
+        text-align: center;
+        width: 70vw;
+    }
+}
+
 .how-to-login__title {
     font-size: 32px;
     line-height: 46px;
@@ -554,7 +650,6 @@ a[id]:not([href]):target + section .target-indicator {
 .how-to-login__text,
 .how-to-login__option {
     line-height: 24px;
-    font-size: 16px;
 }
 
 .how-to-login__text {
@@ -601,7 +696,6 @@ a[id]:not([href]):target + section .target-indicator {
 .how-to-religion__option,
 .how-to-religion__text {
     font-weight: 500;
-    font-size: 16px;
     line-height: 24px;
 }
 
@@ -677,7 +771,6 @@ a[id]:not([href]):target + section .target-indicator {
 
 /*.non-believers-hint,*/
 .census-hints__item {
-    font-size: 16px;
     line-height: 24px;
 }
 
@@ -711,12 +804,23 @@ a[id]:not([href]):target + section .target-indicator {
 .faq__container {
     background: url("../img/faq.svg") 129px 250px no-repeat;
 }
+@media (max-width: 991px) {
+    .faq__container {
+        background: none;
+    }
+}
 
 .fag__title {
     font-size: 48px;
     line-height: 60px;
     margin: 0 0 10px;
     padding: 46px 25px 0;
+}
+@media (max-width: 575px) {
+    .fag__title {
+        font-size: 26px;
+        line-height: 36px;
+    }
 }
 
 .faq__subtitle {
@@ -744,6 +848,11 @@ a[id]:not([href]):target + section .target-indicator {
     padding-top: 32px;
     background: url("../img/voting.svg") calc(95% + 2px) 26px no-repeat;
 }
+@media (max-width: 991px) {
+    .why-would-i__container {
+        background: none;
+    }
+}
 
 .why-would-i__title,
 .why-would-i__text {
@@ -755,9 +864,14 @@ a[id]:not([href]):target + section .target-indicator {
     line-height: 60px;
     margin-bottom: 34px;
 }
+@media (max-width: 575px) {
+    .why-would-i__title {
+        font-size: 26px;
+        line-height: 36px;
+    }
+}
 
 .why-would-i__text {
-    font-size: 16px;
     line-height: 24px;
     margin-bottom: 24px;
 }
@@ -772,6 +886,7 @@ a[id]:not([href]):target + section .target-indicator {
     display: flex;
     justify-content: space-between;
     padding: 0 20px;
+    flex-wrap: wrap;
 }
 
 .social-bottom__title {
@@ -785,7 +900,7 @@ a[id]:not([href]):target + section .target-indicator {
     font-size: 20px;
     background-color: var(--social);
     line-height: 64px;
-    margin: 0;
+    margin: 0 0 0 10px;
     padding: 0 19px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     transition: box-shadow .3s ease, opacity .3s ease;
@@ -834,6 +949,13 @@ a[id]:not([href]):target + section .target-indicator {
 /*    line-height: 112px;*/
 /*    margin-bottom: 48px;*/
 /*    text-align: center;*/
+/*}*/
+
+/*@media (max-width: 575px) {*/
+/*    .partners__title {*/
+/*        font-size: 26px;*/
+/*        line-height: 36px;*/
+/*    }*/
 /*}*/
 
 /*.partners__list {*/
@@ -918,6 +1040,7 @@ a[id]:not([href]):target + section .target-indicator {
     display: flex;
     justify-content: stretch;
     padding: 0;
+    flex-wrap: wrap;
 }
 
 .footer__contact,
@@ -925,7 +1048,6 @@ a[id]:not([href]):target + section .target-indicator {
     color: var(--base-contrast);
     flex: 1;
     margin: 0;
-    font-size: 16px;
     font-weight: 700;
 }
 
