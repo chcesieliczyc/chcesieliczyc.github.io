@@ -295,10 +295,12 @@ a[id]:not([href]):target + section .target-indicator {
 }
 
 .main {
+    background: linear-gradient(180deg, var(--base-bg-light) 0%, #fff 5%, #fff 100%), #fff;
     padding-top: 89px;
 }
 @media (min-width: 576px) {
     .main {
+        background: none;
         padding-top: 96px;
     }
 }
@@ -389,11 +391,12 @@ a[id]:not([href]):target + section .target-indicator {
 
 /* ------------ base ------------------- */
 .base-info {
-    background: linear-gradient(180deg, #fff 0%, var(--base-bg-light) 100%), #fff;
+    background: linear-gradient(180deg, transparent 0%, var(--base-bg-light) 100%), transparent;
     padding-bottom: 57px;
 }
 @media (max-width: 575px) {
     .base-info {
+        background: linear-gradient(180deg, transparent 0%, transparent 70%, var(--base-bg-light) 100%), transparent;
         padding: 0;
     }
 }
