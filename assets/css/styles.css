@@ -577,8 +577,14 @@ a[id]:not([href]):target + section .target-indicator {
 }
 
 /* ------------ summary ---------------- */
+
 .summary {
-    padding: 34px 38px
+    padding: 12px 8px
+}
+@media (min-width: 576px) {
+    .summary {
+        padding: 34px 38px
+    }
 }
 
 .info-boxes {
@@ -588,29 +594,59 @@ a[id]:not([href]):target + section .target-indicator {
 
 .info-box {
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
+}
+@media (min-width: 576px) {
+    .info-box {
+        margin-bottom: 30px;
+    }
 }
 
 .info-box__container {
     background: var(--base-contrast);
     box-shadow: var(--info-box-shadow);
     border-radius: var(--info-box-radius);
-    padding: 140px 23px 27px;
+    padding: 90px 15px 20px;
     width: 100%;
     position: relative;
 }
 
-.info-box__title {
-    text-align: center;
-    font-size: 20px;
-    min-height: 48px;
-    margin: 7px 0 21px;
-    line-height: 24px;
+.debug .info-box__container {
+    background: none;
 }
 
+@media (min-width: 576px) {
+    .info-box__container {
+        padding: 140px 23px 27px;
+    }
+}
+
+.info-box__title {
+    text-align: center;
+    font-size: 18px;
+    line-height: 20px;
+    min-height: 48px;
+    margin: 7px 0 0;
+}
+
+@media (min-width: 576px) {
+    .info-box__title {
+        font-size: 20px;
+        margin-bottom: 21px;
+        line-height: 24px;
+    }
+}
 .info-box__container > p {
     font-weight: 500;
 }
+
+@media (max-width: 575px) {
+    .info-box__container > p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
+
 
 .info-box__container > p:not(:last-child) {
     margin-bottom: 20px;
@@ -623,10 +659,21 @@ a[id]:not([href]):target + section .target-indicator {
 .info-box__icon {
     color: var(--base-border-light);
     position: absolute;
-    top: 47px;
-    left: calc(50% - 32px);
+    top: 23px;
+    left: calc(50% - 24px);
     text-align: center;
     font-size: 70px;
+    width: 48px;
+    height: 48px;
+}
+
+@media (min-width: 576px) {
+    .info-box__icon {
+        top: 47px;
+        left: calc(50% - 32px);
+        width: 64px;
+        height: 64px;
+    }
 }
 
 /* ----------- say what? --------------- */
