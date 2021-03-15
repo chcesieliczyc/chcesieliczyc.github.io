@@ -20,7 +20,12 @@ body {
 }
 
 html.debug {
-    background: url("../tmp/1920px.png") top center;
+    background: url("../tmp/mobile-debug.png") top center no-repeat;
+}
+@media (min-width: 768px) {
+    html.debug {
+        background: url("../tmp/1920px.png") top center no-repeat;
+    }
 }
 
 .debug body {
@@ -237,8 +242,8 @@ a[id]:not([href]):target + section .target-indicator {
 }
 @media (max-width: 575px) {
     .navbar .navbar-toggle {
-        margin-bottom: 15px;
-        margin-top: 15px;
+        margin-top: 18px;
+        margin-bottom: 11px;
     }
 }
 
@@ -257,7 +262,8 @@ a[id]:not([href]):target + section .target-indicator {
 
 @media (max-width: 575px) {
     .logo-container {
-        padding-top: 15px;
+        padding-top: 17px;
+        padding-left: 20px;
     }
     .logo-container img {
         height: 36px;
@@ -266,6 +272,7 @@ a[id]:not([href]):target + section .target-indicator {
     .logo-container .brand {
         font-size: 16px;
         line-height: 38px;
+        margin-left: 12px;
     }
 }
 
@@ -283,7 +290,12 @@ a[id]:not([href]):target + section .target-indicator {
 }
 
 .main {
-    padding-top: 96px;
+    padding-top: 89px;
+}
+@media (min-width: 576px) {
+    .main {
+        padding-top: 96px;
+    }
 }
 
 .section {
@@ -327,15 +339,20 @@ a[id]:not([href]):target + section .target-indicator {
 .social__button {
     background-color: transparent;
     display: inline-block;
-    margin: 0 2px;
+    margin: 0 5px;
     padding: 5px 8px;
     position: relative;
     top: -4px;
     transition: opacity .3s ease;
 }
 
-@media (max-width: 575px) {
+@media (min-width: 576px) {
+    .social__button {
+        margin: 0 2px;
+    }
+}
 
+@media (max-width: 575px) {
     .social__button {
         padding: 0 3px;
     }
@@ -357,7 +374,12 @@ a[id]:not([href]):target + section .target-indicator {
 }
 
 .social__button--twitter {
-    margin-right: 17px;
+    margin-right: 6px;
+}
+@media (min-width: 576px) {
+    .social__button--twitter {
+        margin-right: 17px;
+    }
 }
 
 /* ------------ base ------------------- */
@@ -387,8 +409,8 @@ a[id]:not([href]):target + section .target-indicator {
 }
 
 .main-header {
-    background-size: contain;
-    margin: 0 auto;
+    background-size: cover;
+    margin: 0 auto 35px;
     width: 300px;
     min-height: 250px;
 }
@@ -398,6 +420,7 @@ a[id]:not([href]):target + section .target-indicator {
         background-size: auto;
         min-height: 300px;
         margin-left: 20px;
+        margin-bottom: 0;
         width: auto;
     }
 }
@@ -405,34 +428,42 @@ a[id]:not([href]):target + section .target-indicator {
 .main-header__heading {
     font-size: 26px;
     line-height: 32px;
-    margin: 30px auto 0;
+    margin: 43px auto 0;
     max-width: 90vw;
-    padding-left: 4px;
     text-align: center;
+}
+@media (max-width: 575px) {
+    .main-header__heading {
+        padding-right: 10px;
+    }
 }
 
 @media (min-width: 576px) {
     .main-header__heading {
         font-size: 44px;
+        margin-top: 30px;
         line-height: 64px;
         width: 410px;
+        padding-left: 4px;
+        padding-right: 0;
     }
 }
 
 .main-header__dates {
     font-size: 32px;
     line-height: 40px;
-    margin: 17px auto 33px;
+    margin: 12px auto 33px;
     max-width: 90vw;
     text-align: center;
-    padding-left: 4px;
 }
 
 @media (min-width: 576px) {
     .main-header__dates {
+        margin-top: 17px;
         font-size: 64px;
         line-height: 64px;
         width: 410px;
+        padding-left: 4px;
     }
 }
 
@@ -446,12 +477,27 @@ a[id]:not([href]):target + section .target-indicator {
 }
 
 .intro-text__important--first {
-    font-size: 24px;
-    line-height: 20px;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 23px;
+}
+@media (min-width: 576px) {
+    .intro-text__important--first {
+        font-size: 24px;
+        line-height: 20px;
+        margin-bottom: 0;
+    }
 }
 
 .intro-text__important--second {
-    line-height: 49px;
+    line-height: 21px;
+    margin-bottom: 21px;
+}
+@media (min-width: 576px) {
+    .intro-text__important--second {
+        line-height: 49px;
+        margin-bottom: 0;
+    }
 }
 
 .intro-text--last-census,
@@ -462,16 +508,37 @@ a[id]:not([href]):target + section .target-indicator {
 .intro-text--last-census {
     margin-bottom: 20px;
 }
+@media (max-width: 575px) {
+    .intro-text--last-census,
+    .intro-text--religion {
+        line-height: 18px
+    }
+    .intro-text--religion br {
+        display: none;
+    }
+}
 
 .intro-text--religion {
-    margin-bottom: 48px;
+    margin-bottom: 30px;
+}
+@media (min-width: 576px) {
+    .intro-text--religion {
+        margin-bottom: 48px;
+    }
 }
 
 .intro-text--change {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 18px;
+    line-height: 24px;
     max-width: 620px;
     margin-bottom: 25px;
+}
+@media (min-width: 576px) {
+    .intro-text--change {
+        font-size: 24px;
+        line-height: 32px;
+
+    }
 }
 
 .intro-text--change strong {
@@ -485,6 +552,15 @@ a[id]:not([href]):target + section .target-indicator {
     padding: 16px 57px;
     transition: background-color .3s ease, box-shadow .3s ease;
     text-decoration: none;
+}
+@media (max-width: 575px) {
+    .intro-footer {
+        text-align: center;
+    }
+    .intro-footer__cta {
+        padding: 9px 31px;
+        border-radius: 4px;
+    }
 }
 
 .intro-footer__cta:hover,
