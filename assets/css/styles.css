@@ -38,6 +38,10 @@ p, li {
     font-size: 14px;
 }
 
+em {
+    font-style: normal;
+}
+
 @media (min-width: 576px) {
     p, li {
         font-size: 16px;
