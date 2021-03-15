@@ -92,7 +92,7 @@ a:focus {
 @media (max-width: 767px) {
     .navbar-collapse .nav li > a {
         border-bottom: 0;
-        padding: 25px 18px;
+        padding: 7px 10px;
     }
 
     .navbar-collapse .nav li > a:hover {
@@ -1355,6 +1355,7 @@ a[id]:not([href]):target + section .target-indicator {
 .footer-link--tweeter {
 }
 
-.navbar .navbar-collapse.collapse:target {
+.navbar .navbar-collapse.collapse:target,
+.navbar .navbar-collapse.collapse.open {
     display: block !important;
 }

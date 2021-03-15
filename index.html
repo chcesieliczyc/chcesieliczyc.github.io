@@ -98,7 +98,7 @@
                 <div class="main-header">
                     <h1 class="main-header__heading">Spis Powszechny Online</h1>
                     <h3 class="main-header__dates">
-                        1.04 &ndash; 30.06
+                        1.04&ndash;30.06
                     </h3>
                 </div>
             </header>
@@ -325,13 +325,13 @@
                         Jeśli nie masz wątpliwości, że należysz do konkretnego wyznania, wybierz je z listy.
                         <strong>
                             Warto zaznaczyć &ndash; chrzest (np. w Kościele katolickim) nie oznacza, że musisz podawać
-                            się za jego członka/członkinię.
+                            się za jego członka / członkinię.
                         </strong>
                         Odpowiadaj tak, jak się czujesz.
                         Pytanie o wyznanie to pytanie o <strong>poczucie przynależności</strong>.
                     </li>
                     <li class="census-hints__item">
-                        Jeśli jesteś osobą bezwyznaniową agnostykiem / agnostyczką lub ateistą/ ateistką,
+                        Jeśli jesteś osobą bezwyznaniową agnostykiem / agnostyczką lub ateistą / ateistką,
                         <strong>wybierz opcję „nie należę do żadnego wyznania”</strong>.
 <!--                        <ol class="non-believers-hints">-->
 <!--                            <li class="non-believers-hint">-->
@@ -366,7 +366,7 @@
             <div class="col-md-6 col-md-offset-6">
                 <details class="faq-question">
                     <summary class="faq-question__summary">
-                        <h4>Jestem ochrzczony/a, ale od lat nie chodzę do kościoła, czy muszę zaznaczać Kościół rzymskokatolicki?</h4>
+                        <h4>Jestem ochrzczony(-na), ale od lat nie chodzę do kościoła, czy muszę zaznaczać Kościół rzymskokatolicki?</h4>
                     </summary>
                     <p>
                         Jeśli nie czujesz się związana(-ny) z instytucją, do której „formalnie” należysz, możesz
@@ -377,7 +377,7 @@
                     <li>teizm &ndash; jeśli wierzysz w osobowego Boga, który ma wpływ na Twoje życie</li>
                     <li>deizm &ndash; jeśli wierzysz w bezosobowego boga, który nie wpływa na nasze życie</li>
                     <li>
-                        zaznaczyć „nie należę do żadnego wyznania” - jeśli religia nie ma już dla Ciebie znaczenia,
+                        zaznaczyć „nie należę do żadnego wyznania” &ndash; jeśli religia nie ma już dla Ciebie znaczenia,
                         nie czujesz się częścią żadnej wspólnoty religijnej, nie wiesz, czy bogowie istnieją lub nie wierzysz w ich istnienie.
                     </li>
                 </ul>
@@ -549,6 +549,14 @@
         v || b.addEventListener('click', () => { e && d.body.removeChild(e); s.setItem(k, '1') });
         v && d.body.removeChild(e);
     })('ciasteczka', localStorage, doc, doc.querySelector('.cookies-and-privacy'), doc.querySelector('.cookies-and-privacy__hide'));
+    ((c, t) => {
+        const m = doc.getElementById(t.href.split('#')[1]);
+        t.addEventListener('click', e => {
+            e.preventDefault();
+            const cls = m.classList;
+            if (cls.contains(c)) cls.remove(c); else cls.add(c);
+        })
+    })('open', doc.querySelector('[data-toggle=collapse]'))
 </script>
 </body>
 </html>
