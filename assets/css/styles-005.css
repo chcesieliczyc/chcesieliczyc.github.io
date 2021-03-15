@@ -376,7 +376,8 @@ a[id]:not([href]):target + section .target-indicator {
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     font-size: 20px;
     padding: 16px 57px;
-    transition: background-color .3s ease;
+    transition: background-color .3s ease, box-shadow .3s ease;
+    text-decoration: none;
 }
 
 .intro-footer__cta:hover,
@@ -385,6 +386,11 @@ a[id]:not([href]):target + section .target-indicator {
 .intro-footer__cta:active:focus,
 .intro-footer__cta:visited {
     outline: none;
+}
+
+.intro-footer__cta:active,
+.intro-footer__cta:focus {
+    box-shadow: 0 4px 4px transparent;
 }
 
 /* ------------ summary ---------------- */
