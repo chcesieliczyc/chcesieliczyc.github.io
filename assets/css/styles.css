@@ -1254,26 +1254,33 @@ a[id]:not([href]):target + section .target-indicator {
 }
 
 /* --------- soc bottom -------------- */
-.social-bottom {
+.social-share {
     margin-bottom: 50px;
     padding: 0;
 }
+.social-share--main {
+    padding-top: 50px;
+}
 
-.social-bottom__wrapper {
+.debug .social-share--main {
+    display: none;
+}
+
+.social-share__wrapper {
     display: flex;
     justify-content: space-between;
     padding: 0 20px;
     flex-wrap: wrap;
 }
 
-.social-bottom__title {
+.social-share__title {
     color: var(--social);
     font-size: 40px;
     margin: 0;
     line-height: 64px;
 }
 
-.social-bottom__button {
+.social-share__button {
     font-size: 20px;
     background-color: var(--social);
     line-height: 64px;
@@ -1283,32 +1290,59 @@ a[id]:not([href]):target + section .target-indicator {
     transition: box-shadow .3s ease, opacity .3s ease;
 }
 
-.social-bottom__button img {
+.social-share__button img {
     margin-right: 10px;
 }
 
-.social-bottom__button,
-.social-bottom__button:hover,
-.social-bottom__button:visited,
-.social-bottom__button:focus,
-.social-bottom__button:active {
+@media (max-width: 666px) {
+    .social-share__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .social-share--main .social-share__wrapper {
+        margin-bottom: 40px;
+        margin-top: -50px;
+    }
+    .social-share__title, .social-share__button {
+        margin-bottom: 20px;
+    }
+    .social-share__title {
+        font-size: 24px;
+        text-align: center;
+    }
+    .social-share__button {
+        font-size: 20px;
+        line-height: 48px;
+        padding: 0 20px;
+    }
+    .social-share__button img {
+        width: 24px;
+        margin-left: 5px;
+    }
+}
+
+.social-share__button,
+.social-share__button:hover,
+.social-share__button:visited,
+.social-share__button:focus,
+.social-share__button:active {
     color: var(--base-contrast);
     text-decoration: none;
 }
 
-.social-bottom__button:hover {
+.social-share__button:hover {
     opacity: .7;
 }
 
-.social-bottom__button:focus,
-.social-bottom__button:active {
+.social-share__button:focus,
+.social-share__button:active {
     box-shadow: 0 4px 4px transparent;
 }
 
-.social-bottom__button--facebook {
+.social-share__button--facebook {
 }
 
-.social-bottom__button--twitter {
+.social-share__button--twitter {
 }
 
 /* ---------- partner ---------------- */
