@@ -31,7 +31,6 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 .navbar {
     font-size: 16px;
     transition: all 0.4s;
-    -webkit-transition: all 0.4s;
 }
 
 .navbar .navbar-brand {
@@ -46,34 +45,18 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 }
 
 @media (min-width: 768px) {
-    .navbar-form {
-        margin-top: 21px;
-        margin-bottom: 21px;
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-
-    .navbar-search-form {
-        display: none;
-    }
-
-    .footer:not(.footer-big) nav > ul li:first-child {
-        margin-left: 0;
-    }
+    /*.navbar-form {*/
+    /*    margin-top: 21px;*/
+    /*    margin-bottom: 21px;*/
+    /*    padding-left: 5px;*/
+    /*    padding-right: 5px;*/
+    /*}*/
 
     /*.nav-open .navbar-collapse {*/
-    /*    -webkit-transform: translate3d(0px, 0, 0);*/
-    /*    -moz-transform: translate3d(0px, 0, 0);*/
-    /*    -o-transform: translate3d(0px, 0, 0);*/
-    /*    -ms-transform: translate3d(0px, 0, 0);*/
     /*    transform: translate3d(0px, 0, 0);*/
     /*}*/
 
     /*.nav-open .navbar .container {*/
-    /*    -webkit-transform: translate3d(-200px, 0, 0);*/
-    /*    -moz-transform: translate3d(-200px, 0, 0);*/
-    /*    -o-transform: translate3d(-200px, 0, 0);*/
-    /*    -ms-transform: translate3d(-200px, 0, 0);*/
     /*    transform: translate3d(-200px, 0, 0);*/
     /*}*/
 
@@ -90,54 +73,38 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
         margin-right: 0;
     }
 
-    .navbar-burger.navbar .navbar-collapse.collapse,
-    .navbar-burger.navbar .navbar-collapse.collapse.in,
-    .navbar-burger.navbar .navbar-collapse.collapsing {
-        display: none !important;
-    }
+    /*.navbar-burger.navbar .navbar-collapse.collapse,*/
+    /*.navbar-burger.navbar .navbar-collapse.collapse.in,*/
+    /*.navbar-burger.navbar .navbar-collapse.collapsing {*/
+    /*    display: none !important;*/
+    /*}*/
 }
 
 /*!*          Changes for small display      *!*/
 @media (max-width: 767px) {
-    .navbar-transparent {
-        padding-top: 0px;
-    }
+    /*.navbar-transparent {*/
+    /*    padding-top: 0px;*/
+    /*}*/
 
     body {
         position: relative;
     }
 
-    body > .navbar-collapse {
-        width: 230px;
-        -webkit-transform: translate3d(230px, 0, 0);
-        -moz-transform: translate3d(230px, 0, 0);
-        -o-transform: translate3d(230px, 0, 0);
-        -ms-transform: translate3d(230px, 0, 0);
-        transform: translate3d(230px, 0, 0);
-    }
+    /*body > .navbar-collapse {*/
+    /*    width: 230px;*/
+    /*    transform: translate3d(230px, 0, 0);*/
+    /*}*/
 
     .navbar .container {
         width: 100%;
         position: relative;
-        -webkit-transform: translate3d(0px, 0, 0);
-        -moz-transform: translate3d(0px, 0, 0);
-        -o-transform: translate3d(0px, 0, 0);
-        -ms-transform: translate3d(0px, 0, 0);
         transform: translate3d(0px, 0, 0);
-        -webkit-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
-        -moz-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
-        -o-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
-        -ms-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
         transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
     }
 
-    .nav-open .navbar .container {
-        -webkit-transform: translate3d(-230px, 0, 0);
-        -moz-transform: translate3d(-230px, 0, 0);
-        -o-transform: translate3d(-230px, 0, 0);
-        -ms-transform: translate3d(-230px, 0, 0);
-        transform: translate3d(-230px, 0, 0);
-    }
+    /*.nav-open .navbar .container {*/
+    /*    transform: translate3d(-230px, 0, 0);*/
+    /*}*/
 
     .navbar .navbar-collapse.collapse,
     .navbar .navbar .navbar-collapse.collapse.in,
@@ -145,13 +112,9 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
         display: none !important;
     }
 
-    .nav-open .navbar-collapse {
-        -webkit-transform: translate3d(0px, 0, 0);
-        -moz-transform: translate3d(0px, 0, 0);
-        -o-transform: translate3d(0px, 0, 0);
-        -ms-transform: translate3d(0px, 0, 0);
-        transform: translate3d(0px, 0, 0);
-    }
+    /*.nav-open .navbar-collapse {*/
+    /*    transform: translate3d(0px, 0, 0);*/
+    /*}*/
 
     .navbar-toggle .icon-bar {
         display: block;
@@ -183,11 +146,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 
 .bar1 {
     top: 0px;
-    -webkit-animation: topbar-back 500ms linear 0s;
-    -moz-animation: topbar-back 500ms linear 0s;
     animation: topbar-back 500ms 0s;
-    -webkit-animation-fill-mode: forwards;
-    -moz-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
 
@@ -196,22 +155,14 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 }
 
 .bar3 {
-    bottom: 0px;
-    -webkit-animation: bottombar-back 500ms linear 0s;
-    -moz-animation: bottombar-back 500ms linear 0s;
+    bottom: 0;
     animation: bottombar-back 500ms 0s;
-    -webkit-animation-fill-mode: forwards;
-    -moz-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
 
 .toggled .bar1 {
     top: 6px;
-    -webkit-animation: topbar-x 500ms linear 0s;
-    -moz-animation: topbar-x 500ms linear 0s;
     animation: topbar-x 500ms 0s;
-    -webkit-animation-fill-mode: forwards;
-    -moz-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
 
@@ -221,11 +172,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 
 .toggled .bar3 {
     bottom: 6px;
-    -webkit-animation: bottombar-x 500ms linear 0s;
-    -moz-animation: bottombar-x 500ms linear 0s;
     animation: bottombar-x 500ms 0s;
-    -webkit-animation-fill-mode: forwards;
-    -moz-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
 
@@ -246,40 +193,6 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
     }
 }
 
-@-webkit-keyframes topbar-x {
-    0% {
-        top: 0px;
-        -webkit-transform: rotate(0deg);
-    }
-    45% {
-        top: 6px;
-        -webkit-transform: rotate(145deg);
-    }
-    75% {
-        -webkit-transform: rotate(130deg);
-    }
-    100% {
-        -webkit-transform: rotate(135deg);
-    }
-}
-
-@-moz-keyframes topbar-x {
-    0% {
-        top: 0px;
-        -moz-transform: rotate(0deg);
-    }
-    45% {
-        top: 6px;
-        -moz-transform: rotate(145deg);
-    }
-    75% {
-        -moz-transform: rotate(130deg);
-    }
-    100% {
-        -moz-transform: rotate(135deg);
-    }
-}
-
 @keyframes topbar-back {
     0% {
         top: 6px;
@@ -294,40 +207,6 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
     100% {
         top: 0px;
         transform: rotate(0);
-    }
-}
-
-@-webkit-keyframes topbar-back {
-    0% {
-        top: 6px;
-        -webkit-transform: rotate(135deg);
-    }
-    45% {
-        -webkit-transform: rotate(-10deg);
-    }
-    75% {
-        -webkit-transform: rotate(5deg);
-    }
-    100% {
-        top: 0px;
-        -webkit-transform: rotate(0);
-    }
-}
-
-@-moz-keyframes topbar-back {
-    0% {
-        top: 6px;
-        -moz-transform: rotate(135deg);
-    }
-    45% {
-        -moz-transform: rotate(-10deg);
-    }
-    75% {
-        -moz-transform: rotate(5deg);
-    }
-    100% {
-        top: 0px;
-        -moz-transform: rotate(0);
     }
 }
 
@@ -348,40 +227,6 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
     }
 }
 
-@-webkit-keyframes bottombar-x {
-    0% {
-        bottom: 0px;
-        -webkit-transform: rotate(0deg);
-    }
-    45% {
-        bottom: 6px;
-        -webkit-transform: rotate(-145deg);
-    }
-    75% {
-        -webkit-transform: rotate(-130deg);
-    }
-    100% {
-        -webkit-transform: rotate(-135deg);
-    }
-}
-
-@-moz-keyframes bottombar-x {
-    0% {
-        bottom: 0px;
-        -moz-transform: rotate(0deg);
-    }
-    45% {
-        bottom: 6px;
-        -moz-transform: rotate(-145deg);
-    }
-    75% {
-        -moz-transform: rotate(-130deg);
-    }
-    100% {
-        -moz-transform: rotate(-135deg);
-    }
-}
-
 @keyframes bottombar-back {
     0% {
         bottom: 6px;
@@ -396,66 +241,5 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
     100% {
         bottom: 0px;
         transform: rotate(0);
-    }
-}
-
-@-webkit-keyframes bottombar-back {
-    0% {
-        bottom: 6px;
-        -webkit-transform: rotate(-135deg);
-    }
-    45% {
-        -webkit-transform: rotate(10deg);
-    }
-    75% {
-        -webkit-transform: rotate(-5deg);
-    }
-    100% {
-        bottom: 0px;
-        -webkit-transform: rotate(0);
-    }
-}
-
-@-moz-keyframes bottombar-back {
-    0% {
-        bottom: 6px;
-        -moz-transform: rotate(-135deg);
-    }
-    45% {
-        -moz-transform: rotate(10deg);
-    }
-    75% {
-        -moz-transform: rotate(-5deg);
-    }
-    100% {
-        bottom: 0px;
-        -moz-transform: rotate(0);
-    }
-}
-
-@-webkit-keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@-moz-keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
     }
 }

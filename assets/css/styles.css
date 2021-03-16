@@ -1462,4 +1462,14 @@ a[id]:not([href]):target + section .target-indicator {
 .navbar .navbar-collapse.collapse:target,
 .navbar .navbar-collapse.collapse.open {
     display: block !important;
+    animation: fade-in 300ms 0s;
+}
+
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
