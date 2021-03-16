@@ -132,12 +132,7 @@ details summary {
     list-style-type: none;
 }
 
-/* Firefox */
-details summary::-webkit-details-marker {
-    display: none;
-}
-
-/* Chrome */
+details summary::-webkit-details-marker,
 details summary::marker {
     display: none;
 }
