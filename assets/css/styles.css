@@ -1141,7 +1141,12 @@ a[id]:not([href]):target + section .target-indicator {
 .faq {
     background-color: var(--base-bg-lighter);
     padding-bottom: 65px;
-    margin-bottom: 100px;
+    margin-bottom: 0;
+}
+@media (min-width: 576px) {
+    .faq {
+        margin-bottom: 100px;
+    }
 }
 
 .debug .faq {
@@ -1208,12 +1213,36 @@ a[id]:not([href]):target + section .target-indicator {
 }
 
 .faq-question:not(:last-child) {
-    margin-bottom: 32px;
+    margin-bottom: 18px;
+}
+@media (min-width: 576px) {
+    .faq-question:not(:last-child) {
+        margin-bottom: 32px;
+    }
 }
 
 .faq-question__summary h4 {
-    font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+@media (min-width: 576px) {
+    .faq-question__summary h4 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .faq-question p,
+    .faq-question li {
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
+@media (max-width: 575px) {
+    .faq-question p,
+    .faq-question li {
+        font-size: 13px;
+        font-weight: 500;
+    }
 }
 
 /* ----------- why would i ----------- */
