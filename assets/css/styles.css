@@ -1247,39 +1247,72 @@ a[id]:not([href]):target + section .target-indicator {
 
 /* ----------- why would i ----------- */
 .why-would-i {
-    margin-bottom: 35px;
+    margin-bottom: 0;
+}
+@media (min-width: 576px) {
+    .why-would-i {
+        margin-bottom: 35px;
+    }
 }
 
 .why-would-i__container {
     padding-top: 32px;
-    background: url("../img/voting.svg") calc(95% + 2px) 26px no-repeat;
+    background: url("../img/voting.svg") no-repeat center 116px;
+    background-size: 160px;
 }
-@media (max-width: 991px) {
+
+@media (min-width: 992px) {
     .why-would-i__container {
-        background: none;
+        background-size: 404px;
+        background-position: calc(95% + 2px) 26px;
+    }
+}
+@media (min-width: 1200px) {
+    .why-would-i__container {
+        background-size: auto;
     }
 }
 
-.why-would-i__title,
-.why-would-i__text {
-    padding-left: 25px;
+@media (min-width: 576px) {
+    .why-would-i__title,
+    .why-would-i__text {
+        padding-left: 25px;
+    }
 }
 
 .why-would-i__title {
-    font-size: 48px;
-    line-height: 60px;
-    margin-bottom: 34px;
+    font-size: 26px;
+    line-height: 36px;
+    margin-bottom: 182px;
+    min-height: 72px;
+}
+@media (min-width: 576px) {
+    .why-would-i__title {
+        font-size: 48px;
+        line-height: 60px;
+    }
 }
 @media (max-width: 575px) {
     .why-would-i__title {
-        font-size: 26px;
-        line-height: 36px;
+        margin-top: -4px;
+    }
+}
+@media (min-width: 992px) {
+    .why-would-i__title {
+        min-height: auto;
+        margin-bottom: 34px;
     }
 }
 
 .why-would-i__text {
-    line-height: 24px;
-    margin-bottom: 24px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+@media (min-width: 576px) {
+    .why-would-i__text {
+        line-height: 24px;
+        margin-bottom: 24px;
+    }
 }
 
 /* --------- soc bottom -------------- */
@@ -1306,7 +1339,12 @@ a[id]:not([href]):target + section .target-indicator {
     color: var(--social);
     font-size: 40px;
     margin: 0;
-    line-height: 64px;
+    line-height: 25px;
+}
+@media (min-width: 576px) {
+    .social-share__title {
+        line-height: 64px;
+    }
 }
 
 .social-share__button {
@@ -1342,7 +1380,8 @@ a[id]:not([href]):target + section .target-indicator {
     .social-share__button {
         font-size: 20px;
         line-height: 48px;
-        padding: 0 20px;
+        padding: 0;
+        width: 161px;
     }
     .social-share__button img {
         width: 24px;
