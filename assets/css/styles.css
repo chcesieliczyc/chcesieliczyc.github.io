@@ -612,23 +612,12 @@ a[id]:not([href]):target + section .target-indicator {
 .info-box__container > p {
     font-weight: 500;
 }
-
-@media (max-width: 575px) {
-    .info-box__container > p {
-        font-size: 12px;
-        line-height: 20px;
-    }
-}
-
-
 .info-box__container > p:not(:last-child) {
     margin-bottom: 20px;
 }
-
 .info-box__container > p:last-child {
     margin-bottom: 0;
 }
-
 .info-box__icon {
     color: var(--base-border-light);
     position: absolute;
